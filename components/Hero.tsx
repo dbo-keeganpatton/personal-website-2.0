@@ -3,7 +3,7 @@ export default function Hero() {
     
         <section className="py-20 text-center">
       
-            <h1 className="text-5xl font-bold">Hi, I'm Keegan Patton</h1>
+            <h1 className="text-5xl font-bold animate-dust-reveal">Hi, I'm Keegan Patton</h1>
             <p className="mt-4 text-xl">Analytics Engineer and Data Plumber</p>
             <a
                 href="/contact"

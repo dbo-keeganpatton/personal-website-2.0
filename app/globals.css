@@ -4,19 +4,17 @@
   0% {
     opacity: 0;
     filter: blur(10px);
-    transform: translateY(20px);
-    letter-spacing: 0.5em;
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
     filter: blur(0px);
-    transform: translateY(0);
-    letter-spacing: normal;
+    transform: translateX(0);
   }
 }
 
 .animate-dust-reveal {
-  animation: dust-reveal 2s ease-out forwards;
+  animation: dust-reveal 1s linear forwards;
 }
 
 

@@ -17,7 +17,7 @@ export default function Hero() {
             <p className="mt-4 text-xl">Analytics Engineer and Data Plumber</p>
             
             <button 
-                className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded"
+                className="mt-6 inline-block  text-white px-6 py-3 rounded border-4 border-emerald-900 hover:border-red-700"
                 onClick={handleOpenModal}
             >
                 Get in Touch
@@ -26,7 +26,7 @@ export default function Hero() {
 
 
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-                <h2 className="text-2xl font-semibold mb-4 bg-[#8839ef]">Send me an email</h2>
+                <h2 className="text-2xl font-semibold mb-4 ">Send me an email</h2>
 
   
                 <form className="space-y-4">
@@ -50,7 +50,7 @@ export default function Hero() {
                     />
                     <button 
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+                        className="w-full text-white py-2 rounded hover:bg-red-700"
                     >
                         Send
                     </button>

@@ -11,15 +11,15 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   
     return (
         <div 
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-10"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-xs"
             onClick={onClose}
         >
             <div 
-                className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md mx-4 relative"
+                className="bg-[#4c4f69] rounded-md shadow-lg p-6 w-full max-w-md mx-4 relative"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button 
-                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold"
+                    className="absolute top-0 right-1 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                     onClick={onClose}
                     aria-label="Close Modal"
                 >

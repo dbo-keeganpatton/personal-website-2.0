@@ -3,17 +3,21 @@ import Link from 'next/link'
 export default function Navbar() {
     return (
    
-        <nav className="py-6 flex justify-between items-center border-b">
+        <nav className="py-2 flex justify-between items-center border-b">
       
-            <h1 className="text-xl font-bold justify-center"></h1>
-            <div className="space-x-6">
+            <h1 />
+            <div className="flex items-center">
                 
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="https://www.linkedin.com/in/keeganpatton/" className="mr-5">
+                    <img src="/linkedin-svgrepo-com.svg" alt="Keegan Patton Linkedin" width={55} height={55} />
+                </Link>
+                <Link href="https://github.com/dbo-keeganpatton">
+                    <img src="/github-svgrepo-com.svg" alt="Keegan Patton Github" width={50} height={50} />
+                </Link>
+
+
             </div>
-            <h1 className="text-xl font-bold justify-center"></h1>
+            <h1 />
     
         </nav>
   

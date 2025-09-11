@@ -17,10 +17,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     
         <html lang="en">
             <body className="bg-white text-gray-900">
-                <CursorGlow />
-                <Navbar />
-                <main className="container mx-auto px-4">{children}</main>
-                <Footer />
+               <div className="bg-animation"> 
+                    <div id='stars'></div>
+					<div id='stars2'></div>
+                    <CursorGlow />
+                    <Navbar />
+                    <main className="container mx-auto px-4">{children}</main>
+                    <Footer />
+                </div>
             </body>
         </html>
   

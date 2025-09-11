@@ -25,7 +25,7 @@ export default function Hero() {
 
 
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-                <h2 className="text-2xl font-semibold mb-4 ">Send me an email</h2>
+                <h3 className="text-2xl font-semibold mb-4 ">Leave a message after the beep</h3>
 
   
                 <form className="space-y-4">

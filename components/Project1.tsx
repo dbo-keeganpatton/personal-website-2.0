@@ -28,15 +28,36 @@ export default function Project1() {
             <Prohect1Modal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
                 <h3 className="text-2xl font-semibold mb-4 text-center">Branch Library</h3>
                 
-                <iframe
-                    className="iframe-style"
-                    id="branch-library-embed"
-                    title="Branch Library"
-                    width="1225"
-                    height="600"
-                    loading="lazy"
-                    src="https://branchlibrary-8478c72f5159.herokuapp.com/"
-                />
+               
+                <div className="flex flex-col justify-center items-center object-center">
+                    <p className="text-xl p-3">
+                        User Version Control system flowchart. Users can edit and submit
+                        merge requests on other user content.<br/> Forks of stories can 
+                        also be made and versioned individually.
+                    </p>
+
+                    {/*  Site Embed  */}
+                    <iframe
+                        className="iframe-style"
+                        id="branch-library-embed"
+                        title="Branch Library"
+                        width="1200"
+                        height="500"
+                        loading="lazy"
+                        src="https://branchlibrary-8478c72f5159.herokuapp.com/"
+                    />
+                    
+
+
+                    <img 
+                        src="/db_model.png"
+                        alt="site-schema"
+                        width={800}
+                        className="m-4 align-middle"
+
+                    />
+                </div>
+
            </Prohect1Modal>
 
 

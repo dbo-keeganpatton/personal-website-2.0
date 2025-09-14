@@ -15,7 +15,7 @@ const Prohect1Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             onClick={onClose}
         >
             <div 
-                className="bg-black/90 rounded-xl shadow-lg p-6 w-full max-w-7xl relative border-4 border-emerald-800"
+                className="bg-black/90 items-center justify-center rounded-xl shadow-lg p-6 w-full max-w-7xl relative border-4 border-emerald-800 overflow-auto max-h-160"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button 

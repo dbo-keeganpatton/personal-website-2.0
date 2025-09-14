@@ -38,6 +38,13 @@ export default function Project1() {
                         app database. Browse the embedded app below!
                     </p>
 
+                    <a 
+                        href="https://branchlibrary-8478c72f5159.herokuapp.com/"
+                        className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
+                    > 
+                        Visit the Site 
+                    </a>
+                    
                     {/*  Site Embed  */}
                     <iframe
                         className="iframe-style"

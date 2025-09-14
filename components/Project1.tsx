@@ -1,5 +1,7 @@
 'use client'
 import { useState } from "react"
+import Prohect1Modal from "./Project1Modal";
+
 
 export default function Project1() {
    
@@ -19,8 +21,44 @@ export default function Project1() {
 
             <button
                 className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                onClick={handleModalIsOpen}
             > Learn More 
-            </button>  
+            </button>
+
+            <Prohect1Modal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
+                <h3 className="text-2xl font-semibold mb-4 ">Leave a message after the beep</h3>
+
+  
+                <form className="space-y-4">
+                    <input 
+                        type="email" 
+                        placeholder="Your Email" 
+                        className="w-full border border-gray-300 p-2 rounded"
+                        required
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Subject" 
+                        className="w-full border border-gray-300 p-2 rounded"
+                        required
+                    />
+                    <textarea 
+                        placeholder="Message" 
+                        rows={4}
+                        className="w-full border border-gray-300 p-2 rounded"
+                        required
+                    />
+                    <button 
+                        type="submit"
+                        className="w-full text-white py-2 rounded hover:bg-red-700"
+                    >
+                        Send
+                    </button>
+                </form>
+            </Prohect1Modal>
+
+
+
          </div>
     )
 }

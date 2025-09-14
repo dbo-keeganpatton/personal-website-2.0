@@ -26,36 +26,18 @@ export default function Project1() {
             </button>
 
             <Prohect1Modal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h3 className="text-2xl font-semibold mb-4 ">Leave a message after the beep</h3>
-
-  
-                <form className="space-y-4">
-                    <input 
-                        type="email" 
-                        placeholder="Your Email" 
-                        className="w-full border border-gray-300 p-2 rounded"
-                        required
-                    />
-                    <input 
-                        type="text" 
-                        placeholder="Subject" 
-                        className="w-full border border-gray-300 p-2 rounded"
-                        required
-                    />
-                    <textarea 
-                        placeholder="Message" 
-                        rows={4}
-                        className="w-full border border-gray-300 p-2 rounded"
-                        required
-                    />
-                    <button 
-                        type="submit"
-                        className="w-full text-white py-2 rounded hover:bg-red-700"
-                    >
-                        Send
-                    </button>
-                </form>
-            </Prohect1Modal>
+                <h3 className="text-2xl font-semibold mb-4 text-center">Branch Library</h3>
+                
+                <iframe
+                    className="iframe-style"
+                    id="branch-library-embed"
+                    title="Branch Library"
+                    width="1225"
+                    height="600"
+                    loading="lazy"
+                    src="https://branchlibrary-8478c72f5159.herokuapp.com/"
+                />
+           </Prohect1Modal>
 
 
 

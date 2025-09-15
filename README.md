@@ -9,7 +9,7 @@
 2. Project2
 3. Project3
 4. Project4
-5. -Email loop for Navbar-
+5. ~Email loop for Navbar~
 6. Actions
 7. Heroku
 8. Domain

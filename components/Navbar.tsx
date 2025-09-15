@@ -11,8 +11,11 @@ export default function Navbar() {
                 <Link href="https://www.linkedin.com/in/keeganpatton/" className="mr-5">
                     <img src="/linkedin-svgrepo-com.svg" alt="Keegan Patton Linkedin" width={55} height={55} />
                 </Link>
-                <Link href="https://github.com/dbo-keeganpatton">
+                <Link href="https://github.com/dbo-keeganpatton" className="mr-5">
                     <img src="/github-svgrepo-com.svg" alt="Keegan Patton Github" width={50} height={50} />
+                </Link>
+                <Link  href="/">
+                    <img src="/mail-svgrepo-com.svg" alt="Send and Email" width={60} height={60} />
                 </Link>
 
 

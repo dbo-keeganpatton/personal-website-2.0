@@ -1,7 +1,7 @@
 # Personal Website V2
 
 
-![Sample Image](example.png)
+![Sample Image](./public/example.png)
 
 
 ## To Do

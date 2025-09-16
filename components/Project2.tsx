@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import ProhectModal from "./Project1Modal";
+import ProjectModal from "./ProjectModal";
 
 
 export default function Project2() {
@@ -24,7 +24,7 @@ export default function Project2() {
             </button> 
 
             
-            <ProhectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
+            <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
                 <h3 className="text-2xl font-semibold mb-4 text-center">Dark Oura</h3>
                 
                
@@ -70,7 +70,7 @@ export default function Project2() {
                     
                 </div>
 
-           </ProhectModal>
+           </ProjectModal>
 
 
 

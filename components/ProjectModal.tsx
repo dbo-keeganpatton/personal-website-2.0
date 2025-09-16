@@ -6,7 +6,7 @@ interface ModalProps {
     children: React.ReactNode;
 }
 
-const Prohect1Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+const ProjectModal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;
   
     return (
@@ -32,5 +32,5 @@ const Prohect1Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     );
 };
 
-export default Prohect1Modal;
+export default ProjectModal;
 

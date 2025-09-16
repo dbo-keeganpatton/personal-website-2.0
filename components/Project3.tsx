@@ -25,41 +25,37 @@ export default function Project3() {
 
             
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h3 className="text-2xl font-semibold mb-4 text-center">Dark Oura</h3>
+                <h1 className="text-4xl font-semibold mb-4 text-center">Thrasher Interview Sentiment Analysis</h1>
                 
                
                 <div className="flex flex-col justify-center items-center object-center">
-                     
-                    <a  href="https://ourapi.streamlit.app/"
-                        className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
-                    > 
-                        Visit the Repository 
-                    </a>
+
+                    <h1 className="text-4xl"> Purpose </h1>
 
                     <p className="text-xl p-6 w-230">
-                        Automated self service analytics pipeline using the Oura Ring V2 API and Streamlit. 
-                        The user can obtain an API token from oura directly and generate using that. Secrets 
-                        are used for the API call but are not stored 
-                        in any way.
+                        Extracts Q&A text from interview articles on Thrashermagazine.com. This text is placed into a 
+                        local Postgres database and further transformed through two DBT models. These models prep the
+                        data for langauge processing by removing punctuation and single instances of letters.
+                        The prepped data is then extracted and processed to remove stop words and prep for
+                        tokenization. Using NLTK, tokens are then evaluated for sentiment using
+                        the SentimentIntensityAnalyzer method and assigned a value ranging -1 to 1.
+                        This data is aggregated to an average of all sentiment values contained
+                        between questions and answers in the interview.                    
                     </p>
 
-                  
+                    <h1 className="text-4xl"> Data Pipeline Structure </h1>
+                
                     <img
-                        src="/sample_token.png"
+                        src="/dataFlow.png"
                         alt="sample token"
                         width={900}
                     />
 
-                    
-                    <p className="text-xl p-6 w-230">
-                        Biometric data is extracted via a custom package I made, Ourapi.py, that standardizes
-                        programattic extraction of data from the Oura Ring V2 API. This data is then processed 
-                        using pandas and stored in memory within the Streamlit app. The data is visualized into 
-                        3 distinct categories, sleep, stress and activity. The user can define a time
-                        frame of data to pull upon extraction.                    
-                    </p>
 
+                    <h1 className="text-4xl"> Tooling </h1>
 
+                  
+                                       
                     <img 
                         src="/sample.png"
                         alt="site-schema"
@@ -68,6 +64,12 @@ export default function Project3() {
 
                     />
                     
+                    <a  href="https://ourapi.streamlit.app/"
+                        className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
+                    > 
+                        Visit the Repository 
+                    </a>
+
                 </div>
 
            </ProjectModal>

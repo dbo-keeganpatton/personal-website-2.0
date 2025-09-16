@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import ProhectModal from "./Project1Modal";
+import ProhectModal from "./ProjectModal";
 
 
 export default function Project2() {

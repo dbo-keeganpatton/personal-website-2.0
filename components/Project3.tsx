@@ -28,7 +28,7 @@ export default function Project3() {
                 <h1 className="text-4xl font-semibold mb-4 text-center">Thrasher Interview Sentiment Analysis</h1>
                 
                
-                <div className="flex flex-col justify-center items-center object-center">
+                <div className="flex flex-col p-15">
 
                     <h1 className="text-4xl"> Purpose </h1>
 
@@ -52,8 +52,17 @@ export default function Project3() {
                     />
 
 
-                    <h1 className="text-4xl"> Tooling </h1>
-
+                    <h1 className="text-4xl pt-10">Tooling </h1>
+                    <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
+                        <li> Pandas </li>
+                        <li> Seaborn </li>
+                        <li> Postgres </li>
+                        <li> Selenium </li>
+                        <li> SqlAlchemy </li>
+                        <li> BeautifulSoup </li>
+                        <li> Apache Airflow </li>
+                        <li> DBT (Data Build Tool) </li>
+                    </ol>
                   
                                        
                     <img 

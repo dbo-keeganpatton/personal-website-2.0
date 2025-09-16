@@ -29,10 +29,10 @@ export default function Project3() {
                 
                
                 <div className="flex flex-col p-15">
-
-                    <h1 className="text-4xl"> Purpose </h1>
-
-                    <p className="text-xl p-6 w-230">
+ 
+                    <h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
+                    <hr />
+                    <p className="text-xl p-6">
                         Extracts Q&A text from interview articles on Thrashermagazine.com. This text is placed into a 
                         local Postgres database and further transformed through two DBT models. These models prep the
                         data for langauge processing by removing punctuation and single instances of letters.
@@ -43,16 +43,13 @@ export default function Project3() {
                         between questions and answers in the interview.                    
                     </p>
 
-                    <h1 className="text-4xl"> Data Pipeline Structure </h1>
-                
-                    <img
-                        src="/dataFlow.png"
-                        alt="sample token"
-                        width={900}
-                    />
+                    <h1 className="text-4xl pb-3 font-bold"> Data Pipeline Structure </h1>
+                    <hr className="pb-4"/>
+                    <img src="/dataFlow.png" alt="Pipeline Diagram" />
 
 
-                    <h1 className="text-4xl pt-10">Tooling </h1>
+                    <h1 className="text-4xl pt-10 pb-3 font-bold">Tooling </h1>
+                    <hr />
                     <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
                         <li> Pandas </li>
                         <li> Seaborn </li>
@@ -63,18 +60,20 @@ export default function Project3() {
                         <li> Apache Airflow </li>
                         <li> DBT (Data Build Tool) </li>
                     </ol>
-                  
-                                       
-                    <img 
-                        src="/sample.png"
-                        alt="site-schema"
-                        width={900}
-                        className="m-4 align-middle"
 
-                    />
+
+                    <h1 className="text-4xl pt-10 font-bold pb-3"> Airflow DAG </h1>
+                    <hr className="pb-4"/>
+                    <img src="/dag.png" alt="airflow dag" />
+                   
+
+                    <h1 className="text-4xl pt-10 pb-3 font-bold"> Sentiment Distribution </h1>
+                    <hr className="pb-4"/>
+                    <img src="/SentimentHistogram.png" alt="Thrasher Sentiment Distribution" />
+
                     
-                    <a  href="https://ourapi.streamlit.app/"
-                        className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
+                    <a  href="https://github.com/dbo-keeganpatton/thrasher_data_pipeline/tree/main"
+                        className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
                     > 
                         Visit the Repository 
                     </a>

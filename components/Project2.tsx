@@ -30,7 +30,7 @@ export default function Project2() {
                
                 <div className="flex flex-col justify-center items-center object-center">
                      
-                    <a  href="https://ourapi.streamlit.app/"
+                    <a  href="https://darkoura.streamlit.app/"
                         className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
                     > 
                         Visit the Site 

@@ -14,10 +14,9 @@ export default function Project4() {
 
     return (
         <div className="border p-6 rounded-3xl shadow">
-          <h3 className="text-xl font-bold">Thrasher Magazine NLP Web Scraping Pipeline</h3>
+          <h3 className="text-xl font-bold"> GoQuery </h3>
             <p className="mt-3">
-                Pipeline that scrapes text data from Thrashermagazine.com, processes it, and 
-                performas an NLP sentiment analysis.
+               GCP BigQuery connection app to export full query resultsets to csv. Written in Go. 
             </p>
 
             <button
@@ -28,52 +27,39 @@ export default function Project4() {
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
 
-                <h1 className="text-4xl font-semibold mb-4 text-center">Thrasher Interview Sentiment Analysis</h1>
+                <h1 className="text-4xl font-semibold mb-4 text-center">Golang BigQuery Export Tool</h1>
                 <div className="flex flex-col p-15">
  
                     <h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
                     <hr />
                     <p className="text-xl p-6">
-                        Extracts Q&A text from interview articles on Thrashermagazine.com. This text is placed into a 
-                        local Postgres database and further transformed through two DBT models. These models prep the
-                        data for langauge processing by removing punctuation and single instances of letters.
-                        The prepped data is then extracted and processed to remove stop words and prep for
-                        tokenization. Using NLTK, tokens are then evaluated for sentiment using
-                        the SentimentIntensityAnalyzer method and assigned a value ranging -1 to 1.
-                        This data is aggregated to an average of all sentiment values contained
-                        between questions and answers in the interview.                    
+                        Native Bigquery resultset csv exports are incomplete. This application enables a low code solution 
+                        requiring no client libraries or dependencies. Written and packaged using Golang, enabling a cross
+                        platform UI for efficient data extraction.
                     </p>
 
-                    <h1 className="text-4xl pb-3 font-bold"> Data Pipeline Structure </h1>
+                    <h1 className="text-4xl pb-3 font-bold"> Application UI </h1>
                     <hr className="pb-4"/>
-                    <img src="/dataFlow.png" alt="Pipeline Diagram" />
+                    <img src="/GoQu.png" alt="Pipeline Diagram" />
 
 
                     <h1 className="text-4xl pt-10 pb-3 font-bold">Tooling </h1>
                     <hr />
                     <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
-                        <li> Pandas </li>
-                        <li> Seaborn </li>
-                        <li> Postgres </li>
-                        <li> Selenium </li>
-                        <li> SqlAlchemy </li>
-                        <li> BeautifulSoup </li>
-                        <li> Apache Airflow </li>
-                        <li> DBT (Data Build Tool) </li>
+                        <li> Golang </li>
+                        <li> Fyne (UI Viz) </li>
                     </ol>
 
 
-                    <h1 className="text-4xl pt-10 font-bold pb-3"> Airflow DAG </h1>
+                    <h1 className="text-4xl pt-10 font-bold pb-3"> Application Use </h1>
                     <hr className="pb-4"/>
-                    <img src="/dag.png" alt="airflow dag" />
-                   
-
-                    <h1 className="text-4xl pt-10 pb-3 font-bold"> Sentiment Distribution </h1>
-                    <hr className="pb-4"/>
-                    <img src="/SentimentHistogram.png" alt="Thrasher Sentiment Distribution" />
-
+                    <hr />
+                    <p className="text-xl p-6">
+                        Download the GoQuery.zip and unzip on Mac, or download and execute the GoQuery.exe program on Windows.
+                        Input your billing project and query string and click Run.
+                    </p>
                     
-                    <a  href="https://github.com/dbo-keeganpatton/thrasher_data_pipeline/tree/main"
+                    <a  href="https://github.com/dbo-keeganpatton/GoQuery/tree/main"
                         className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
                     > 
                         Visit the Repository 

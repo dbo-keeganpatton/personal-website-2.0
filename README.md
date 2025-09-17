@@ -14,4 +14,5 @@
 7. Heroku
 8. Domain
 9. Fix Dark oura streamlit deployment to link
+10. Email Server
 

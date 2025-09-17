@@ -1,5 +1,8 @@
 'use client'
 import { useState } from "react"
+import ProjectModal from "./ProjectModal";
+
+
 
 export default function Project4() {
    
@@ -7,7 +10,6 @@ export default function Project4() {
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
 
-    {/* Create a Modal for this project at some point */}
 
 
     return (
@@ -20,8 +22,67 @@ export default function Project4() {
 
             <button
                 className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                onClick={handleModalIsOpen}
             > Learn More 
             </button>  
+
+            <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
+
+                <h1 className="text-4xl font-semibold mb-4 text-center">Thrasher Interview Sentiment Analysis</h1>
+                <div className="flex flex-col p-15">
+ 
+                    <h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
+                    <hr />
+                    <p className="text-xl p-6">
+                        Extracts Q&A text from interview articles on Thrashermagazine.com. This text is placed into a 
+                        local Postgres database and further transformed through two DBT models. These models prep the
+                        data for langauge processing by removing punctuation and single instances of letters.
+                        The prepped data is then extracted and processed to remove stop words and prep for
+                        tokenization. Using NLTK, tokens are then evaluated for sentiment using
+                        the SentimentIntensityAnalyzer method and assigned a value ranging -1 to 1.
+                        This data is aggregated to an average of all sentiment values contained
+                        between questions and answers in the interview.                    
+                    </p>
+
+                    <h1 className="text-4xl pb-3 font-bold"> Data Pipeline Structure </h1>
+                    <hr className="pb-4"/>
+                    <img src="/dataFlow.png" alt="Pipeline Diagram" />
+
+
+                    <h1 className="text-4xl pt-10 pb-3 font-bold">Tooling </h1>
+                    <hr />
+                    <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
+                        <li> Pandas </li>
+                        <li> Seaborn </li>
+                        <li> Postgres </li>
+                        <li> Selenium </li>
+                        <li> SqlAlchemy </li>
+                        <li> BeautifulSoup </li>
+                        <li> Apache Airflow </li>
+                        <li> DBT (Data Build Tool) </li>
+                    </ol>
+
+
+                    <h1 className="text-4xl pt-10 font-bold pb-3"> Airflow DAG </h1>
+                    <hr className="pb-4"/>
+                    <img src="/dag.png" alt="airflow dag" />
+                   
+
+                    <h1 className="text-4xl pt-10 pb-3 font-bold"> Sentiment Distribution </h1>
+                    <hr className="pb-4"/>
+                    <img src="/SentimentHistogram.png" alt="Thrasher Sentiment Distribution" />
+
+                    
+                    <a  href="https://github.com/dbo-keeganpatton/thrasher_data_pipeline/tree/main"
+                        className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
+                    > 
+                        Visit the Repository 
+                    </a>
+
+                </div>
+            </ProjectModal>
+
+
          </div>
     )
 }

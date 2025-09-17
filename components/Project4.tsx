@@ -53,7 +53,6 @@ export default function Project4() {
 
                     <h1 className="text-4xl pt-10 font-bold pb-3"> Application Use </h1>
                     <hr className="pb-4"/>
-                    <hr />
                     <p className="text-xl p-6">
                         Download the GoQuery.zip and unzip on Mac, or download and execute the GoQuery.exe program on Windows.
                         Input your billing project and query string and click Run.

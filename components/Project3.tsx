@@ -25,14 +25,14 @@ export default function Project3() {
 
             
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h1 className="text-4xl font-semibold mb-4 text-center">Thrasher Interview Sentiment Analysis</h1>
+                <h1 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">Thrasher Sentiment Analysis</h1>
                 
                
                 <div className="flex flex-col p-15">
  
-                    <h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
-                    <hr />
-                    <p className="text-xl p-6">
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Purpose </h1>
+                    <hr className="pb-3" />
+                    <p className="text-sm lg:text-2xl pb-6">
                         Extracts Q&A text from interview articles on Thrashermagazine.com. This text is placed into a 
                         local Postgres database and further transformed through two DBT models. These models prep the
                         data for langauge processing by removing punctuation and single instances of letters.
@@ -43,14 +43,14 @@ export default function Project3() {
                         between questions and answers in the interview.                    
                     </p>
 
-                    <h1 className="text-4xl pb-3 font-bold"> Data Pipeline Structure </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Data Pipeline Structure </h1>
                     <hr className="pb-4"/>
                     <img src="/dataFlow.png" alt="Pipeline Diagram" />
 
 
-                    <h1 className="text-4xl pt-10 pb-3 font-bold">Tooling </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 pt-6 font-bold">Tooling </h1>
                     <hr />
-                    <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
+                    <ol className="list-decimal text-lg lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
                         <li> Pandas </li>
                         <li> Seaborn </li>
                         <li> Postgres </li>
@@ -62,21 +62,19 @@ export default function Project3() {
                     </ol>
 
 
-                    <h1 className="text-4xl pt-10 font-bold pb-3"> Airflow DAG </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 pt-6 font-bold"> Airflow DAG </h1>
                     <hr className="pb-4"/>
                     <img src="/dag.png" alt="airflow dag" />
                    
 
-                    <h1 className="text-4xl pt-10 pb-3 font-bold"> Sentiment Distribution </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 pt-6 font-bold"> Sentiment Distribution </h1>
                     <hr className="pb-4"/>
                     <img src="/SentimentHistogram.png" alt="Thrasher Sentiment Distribution" />
 
                     
                     <a  href="https://github.com/dbo-keeganpatton/thrasher_data_pipeline/tree/main"
                         className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
-                    > 
-                        Visit the Repository 
-                    </a>
+                    > Visit the Repository </a>
 
                 </div>
 

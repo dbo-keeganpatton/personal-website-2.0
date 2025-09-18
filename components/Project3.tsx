@@ -12,7 +12,7 @@ export default function Project3() {
 
     return (
         <div className="border p-6 rounded-3xl shadow">
-          <h3 className="text-xl font-bold">Thrasher Webscraping NPL Pipeline</h3>
+          <h3 className="text-xl font-bold">Thrasher Webscraping NLP Pipeline</h3>
             <p className="mt-3">
                  Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
             </p>

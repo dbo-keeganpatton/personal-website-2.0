@@ -18,12 +18,12 @@ export default function Project1() {
             <p className="mt-3">
                 Cooperative Web App for Text Editing, written in Flask. 
             </p>
-
-            <button
-                className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
-                onClick={handleModalIsOpen}
-            > Learn More 
-            </button>
+			
+			<button
+				className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+				onClick={handleModalIsOpen}
+			> Learn More 
+			</button>
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
                 <h1 className="text-4xl font-semibold mb-4 text-center">Branch Library</h1>

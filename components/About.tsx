@@ -10,7 +10,6 @@ export default function About() {
         
 		<section className="py-16 max-w-2xl mx-auto">
             
-			<h2 className="text-2xl font-semibold mb-4 pl-5">About Me</h2>
             <div className="lg:h-45 lg:text-2xl sm:text-1xl flex items-start">
                 <span className="lg:text-2xl sm:text-1xl animate-pulse text-emerald-800 mr-2">❯</span>
         

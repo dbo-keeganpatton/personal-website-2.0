@@ -26,65 +26,59 @@ export default function Project1() {
             </button>
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h3 className="text-2xl font-semibold mb-4 text-center">Branch Library</h3>
+                <h1 className="text-4xl font-semibold mb-4 text-center">Branch Library</h1>
                 
                
-                <div className="flex flex-col justify-center items-center object-center">
-                    <p className="text-xl p-3">
+                <div className="flex flex-col p-15">
+
+					<h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
+                    <hr className="pb-6" />
+                    <p className="text-xl pb-6">
                         My crack at a very simple application designed to emulate the Git workflow
-                        adopted to traditional<br/>authors. Users can create accounts, create content,
-                        edit other User content, and browse existing<br/> libraries. Writted in Python 
-                        implementing Flask for UI and back-end integrations, and SQLite for<br/> the
+                        adopted to traditional authors. Users can create accounts, create content,
+                        edit other User content, and browse existing libraries. Writted in Python 
+                        implementing Flask for UI and back-end integrations, and SQLite for the
                         app database. Browse the embedded app below!
                     </p>
 
-                    <a 
-                        href="https://branchlibrary-8478c72f5159.herokuapp.com/"
-                        className="text-xl  border-2 rounded-md border-red-800 hover:border-emerald-700   p-1 m-3"
-                    > 
-                        Visit the Site 
-                    </a>
                     
                     {/*  Site Embed  */}
                     <iframe
                         className="iframe-style"
                         id="branch-library-embed"
                         title="Branch Library"
-                        width="900"
                         height="500"
                         loading="lazy"
                         src="https://branchlibrary-8478c72f5159.herokuapp.com/"
                     />
                     
-                    <p className="text-xl p-3">
+
+					<h1 className="text-4xl pb-3 pt-12 font-bold"> User Version Control System Flow </h1>
+                    <hr className="pb-6" />
+                    <p className="text-xl pb-6">
                         User Version Control system flowchart. Users can edit and submit
-                        merge requests on other user content.<br/> Forks of stories can 
+                        merge requests on other user content. Forks of stories can 
                         also be made and versioned individually.
                     </p>
+                    <img src="/version_ctrl.png" alt="site-schema" />
 
 
-                    <img 
-                        src="/version_ctrl.png"
-                        alt="site-schema"
-                        width={900}
-                        className="m-4 align-middle"
-
-                    />
-                    
-                   <p className="text-xl p-3"> 
+					<h1 className="text-4xl pb-3 pt-12 font-bold"> Database Design </h1>
+                    <hr className="pb-6" />
+					<p className="text-xl pb-6"> 
                         Database is implemented using SQLite. The schema consists of User credentials, 
-                        Stories, their<br/>versions, and merge requests. Database enables both the version
-                        control system<br/> and secure user authentication.
-                   </p>
-                    <img 
-                        src="/db_model.png"
-                        alt="site-schema"
-                        width={900}
-                        className="m-4 align-middle"
-
-                    />
-
-                </div>
+                        Stories, their versions, and merge requests. Database enables both the version
+                        control system and secure user authentication.
+                   
+					</p>
+                
+					
+					<img src="/db_model.png" alt="site-schema" />
+                    <a href="https://branchlibrary-8478c72f5159.herokuapp.com/"
+                        className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
+                    > Visit the Site </a>
+                
+				</div>
 
            </ProjectModal>
 

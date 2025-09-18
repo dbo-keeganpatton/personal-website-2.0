@@ -27,33 +27,33 @@ export default function Project4() {
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
 
-                <h1 className="text-4xl font-semibold mb-4 text-center">Golang BigQuery Export Tool</h1>
+                <h1 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">BigQuery Export App</h1>
                 <div className="flex flex-col p-15">
  
-                    <h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
-                    <hr />
-                    <p className="text-xl p-6">
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Purpose </h1>
+                    <hr className="pb-3" />
+                    <p className="text-sm lg:text-2xl pb-6">
                         Native Bigquery resultset csv exports are incomplete. This application enables a low code solution 
                         requiring no client libraries or dependencies. Written and packaged using Golang, enabling a cross
                         platform UI for efficient data extraction.
                     </p>
 
-                    <h1 className="text-4xl pb-3 font-bold"> Application UI </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Application UI </h1>
                     <hr className="pb-4"/>
                     <img src="/GoQu.png" alt="Pipeline Diagram" />
 
 
-                    <h1 className="text-4xl pt-10 pb-3 font-bold">Tooling </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold pt-6">Tooling </h1>
                     <hr />
-                    <ol className="list-decimal text-xl pl-10 pt-4 pb-4">
+                    <ol className="list-decimal text-md lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
                         <li> Golang </li>
                         <li> Fyne (UI Viz) </li>
                     </ol>
 
 
-                    <h1 className="text-4xl pt-10 font-bold pb-3"> Application Use </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold pt-6"> Application Use </h1>
                     <hr className="pb-4"/>
-                    <p className="text-xl p-6">
+                    <p className="text-sm lg:text-2xl pb-6">
                         Download the GoQuery.zip and unzip on Mac, or download and execute the GoQuery.exe program on Windows.
                         Input your billing project and query string and click Run.
                     </p>

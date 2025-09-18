@@ -50,7 +50,7 @@ export default function Project3() {
 
                     <h1 className="text-xl  lg:text-3xl pb-3 pt-6 font-bold">Tooling </h1>
                     <hr />
-                    <ol className="list-decimal text-lg lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
+                    <ol className="list-decimal text-md lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
                         <li> Pandas </li>
                         <li> Seaborn </li>
                         <li> Postgres </li>

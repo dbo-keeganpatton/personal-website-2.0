@@ -14,7 +14,7 @@ export default function Project3() {
         <div className="border p-6 rounded-3xl shadow">
           <h3 className="text-xl font-bold">Thrasher Webscraping NPL Pipeline</h3>
             <p className="mt-3">
-                 Pipeline that scrapes text data from Thrashermagazine.com, processes it, and performas an NLP sentiment analysis.
+                 Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
             </p>
 
             <button

@@ -26,14 +26,14 @@ export default function Project1() {
 			</button>
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h1 className="text-4xl font-semibold mb-4 text-center">Branch Library</h1>
+                <h1 className="text-4xl font-semibold mb-2 mt-6 text-center">Branch Library</h1>
                 
                
                 <div className="flex flex-col p-15">
 
-					<h1 className="text-4xl pb-3 font-bold"> Purpose </h1>
+					<h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Purpose </h1>
                     <hr className="pb-6" />
-                    <p className="text-xl pb-6">
+                    <p className="text-sm lg:text-2xl pb-6">
                         My crack at a very simple application designed to emulate the Git workflow
                         adopted to traditional authors. Users can create accounts, create content,
                         edit other User content, and browse existing libraries. Writted in Python 
@@ -53,9 +53,9 @@ export default function Project1() {
                     />
                     
 
-					<h1 className="text-4xl pb-3 pt-12 font-bold"> User Version Control System Flow </h1>
+					<h1 className="text-xl  lg:text-3xl pb-2 pt-10 font-bold"> User Version Control System Flow </h1>
                     <hr className="pb-6" />
-                    <p className="text-xl pb-6">
+                    <p className="text-sm lg:text-2xl pb-6">
                         User Version Control system flowchart. Users can edit and submit
                         merge requests on other user content. Forks of stories can 
                         also be made and versioned individually.
@@ -63,9 +63,9 @@ export default function Project1() {
                     <img src="/version_ctrl.png" alt="site-schema" />
 
 
-					<h1 className="text-4xl pb-3 pt-12 font-bold"> Database Design </h1>
+					<h1 className="text-xl  lg:text-3xl pb-2 pt-10 font-bold"> Database Design </h1>
                     <hr className="pb-6" />
-					<p className="text-xl pb-6"> 
+					<p className="text-sm lg:text-2xl pb-6"> 
                         Database is implemented using SQLite. The schema consists of User credentials, 
                         Stories, their versions, and merge requests. Database enables both the version
                         control system and secure user authentication.

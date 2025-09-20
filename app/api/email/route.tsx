@@ -4,6 +4,7 @@ import Mail from "nodemailer/lib/mailer";
 
 
 
+export const dynamic = "force-dynamic"; 
 export async function POST(request: NextRequest) {
     const { email, subject, message } = await request.json();
     const transport = nodemailer.createTransport({

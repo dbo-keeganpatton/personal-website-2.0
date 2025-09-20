@@ -19,9 +19,9 @@ export default function About() {
             
                         strings: [
                             `Hello! I am an analytics engineer currently working for Walmart. 
-                            I spend alot of time playing around with databases, building pipelines, 
-                            managing devops workflows, and making poorly designed web apps. 
-                            Below you can find a few fun projects I have done, and some base 
+                            In my free time I spend alot of time playing around with databases, 
+                            building pipelines, managing devops workflows, and making poorly designed 
+                            web apps. Below you can find a few fun projects I have done, and some base 
                             documentation outlining them. I love to talk about technology, 
                             so feel free to reach out by sending me an email, or connecting 
                             over LinkedIn.`

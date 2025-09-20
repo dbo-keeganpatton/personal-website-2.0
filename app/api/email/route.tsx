@@ -3,6 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from "nodemailer/lib/mailer";
 
 
+
 export async function POST(request: NextRequest) {
     const { email, subject, message } = await request.json();
     const transport = nodemailer.createTransport({

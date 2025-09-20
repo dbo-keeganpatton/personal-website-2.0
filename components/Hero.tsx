@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 
 
 export type FormData = {
-    name: string;
+    subject: string;
     email: string;
     message: string;
 };
@@ -52,7 +52,7 @@ const Hero: FC = () => {
                         type="text" 
                         placeholder="Subject" 
                         className="w-full border border-gray-300 p-2 rounded"
-                        {...register('name', { required: true })}
+                        {...register('subject', { required: true })}
                     />
                     <textarea 
                         placeholder="Message" 

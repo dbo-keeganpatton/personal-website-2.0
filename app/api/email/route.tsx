@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const mailOptions: Mail.Options = {
         from: process.env.APPEMAIL,
         to: process.env.APPEMAIL,
-        subject: `Message from ${name} (${email})`,
+        subject: `Message from (${email})`,
         text: message,
     };
 
@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
         new Promise<string>((resolve, reject) => {
             transport.sendMail(mailOptions, function (err) {
                 if (!err) {
-                    resolve('Email Sent');
+                    resolve('Thank you for reaching out, I will get back as soon as possible');
                 } else {
                     reject(err.message);
                 }
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     
     try {
         await sendMailPromise();
-        return NextResponse.json({ message: 'Email Sent' });
+        return NextResponse.json({ message: 'Thank you for reaching out, I will get back as soon as possible' });
     } catch (err) {
         return NextResponse.json({ error: err }, { status: 500 });
     }

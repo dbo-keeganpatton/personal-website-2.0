@@ -3,8 +3,10 @@ import nodemailer from 'nodemailer';
 import Mail from "nodemailer/lib/mailer";
 
 
+
+export const dynamic = "force-dynamic"; 
 export async function POST(request: NextRequest) {
-    const { email, name, message } = await request.json();
+    const { email, subject, message } = await request.json();
     const transport = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -16,7 +18,7 @@ export async function POST(request: NextRequest) {
     const mailOptions: Mail.Options = {
         from: process.env.APPEMAIL,
         to: process.env.APPEMAIL,
-        subject: `Message from (${email})`,
+        subject: `Message from (${email}): ${subject}`,
         text: message,
     };
 

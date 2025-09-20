@@ -5,16 +5,16 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Copy package.json and package-lock.json (or yarn.lock) to install dependencies
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN npm install 
 
 # Copy the rest of the application code
 COPY . .
 
 # Build the Next.js application
-RUN yarn build
+RUN npm run build 
 
 # --- Production Image ---
 FROM node:20-alpine AS runner
@@ -22,7 +22,7 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 # Set environment variables for Next.js
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Copy the standalone build from the builder stage
 COPY --from=builder /app/.next/standalone ./

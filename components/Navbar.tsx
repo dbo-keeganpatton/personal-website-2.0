@@ -1,12 +1,25 @@
 'use client'
-
 import Link from 'next/link'
-import { useState } from "react";
+import { sendEmail } from "@/utils/send-email";
+import { FC, useState } from "react";
+import { useForm } from "react-hook-form";
 import Modal from "./EmailModal";
 
 
+export type FormData = {
+    subject: string;
+    email: string;
+    message: string;
+};
 
-export default function Navbar() {
+
+
+const Navbar: FC = () => {
+
+    const { register, handleSubmit } = useForm<FormData>();
+    function onSubmit(data: FormData) {
+        sendEmail(data);
+    }
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const handleOpenModal = () => setIsModalOpen(true);
@@ -31,34 +44,36 @@ export default function Navbar() {
 
 
 
-                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-                    <h3 className="text-center text-1xl font-semibold mb-4 ">Leave a message after the beep</h3>
-                    <form className="space-y-4">
-                        <input 
-                            type="email" 
-                            placeholder="Your Email" 
-                            className="w-full border border-gray-300 p-2 rounded"
-                            required
-                        />
-                        <input 
-                            type="text" 
-                            placeholder="Subject" 
-                            className="w-full border border-gray-300 p-2 rounded"
-                            required
-                        />
-                        <textarea 
-                            placeholder="Message" 
-                            rows={4}
-                            className="w-full border border-gray-300 p-2 rounded"
-                            required
-                        />
-                        <button 
-                            type="submit"
-                            className="w-full text-white py-2 rounded hover:bg-red-700"
-                        >
-                            Send
-                        </button>
-                    </form>
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                <h3 className="text-center text-1xl font-semibold mb-4 ">Leave a message after the beep</h3>
+
+  
+                <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
+                    <input 
+                        type="email" 
+                        placeholder="Your Email" 
+                        className="w-full border border-gray-300 p-2 rounded"
+                        {...register('email', { required: true })}
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Subject" 
+                        className="w-full border border-gray-300 p-2 rounded"
+                        {...register('subject', { required: true })}
+                    />
+                    <textarea 
+                        placeholder="Message" 
+                        rows={4}
+                        className="w-full border border-gray-300 p-2 rounded"
+                        {...register('message', { required: true })}
+                    />
+                    <button 
+                        type="submit"
+                        className="w-full text-white py-2 rounded hover:bg-red-700"
+                    >
+                        Send
+                    </button>
+                </form>
             </Modal>
 
 
@@ -69,3 +84,5 @@ export default function Navbar() {
   
     )
 }
+
+export default Navbar;

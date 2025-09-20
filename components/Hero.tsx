@@ -46,7 +46,7 @@ const Hero: FC = () => {
                         type="email" 
                         placeholder="Your Email" 
                         className="w-full border border-gray-300 p-2 rounded"
-                        {...register('name', { required: true })}
+                        {...register('email', { required: true })}
                     />
                     <input 
                         type="text" 
@@ -58,7 +58,7 @@ const Hero: FC = () => {
                         placeholder="Message" 
                         rows={4}
                         className="w-full border border-gray-300 p-2 rounded"
-                        {...register('name', { required: true })}
+                        {...register('message', { required: true })}
                     />
                     <button 
                         type="submit"

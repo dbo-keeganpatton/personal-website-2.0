@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-/* Hides the scrollbar entirely */
-html::-webkit-scrollbar {
-    display: none; 
-    scrollbar-width: none; 
+html, body {
+  @apply bg-black text-white;
 }
 
 .blink_me {

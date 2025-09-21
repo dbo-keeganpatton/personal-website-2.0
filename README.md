@@ -6,8 +6,8 @@
 
 ## To Do
 1. Correct tailwind custom animations not computing when sourced from `tailwind.config.js` file
-5. Style Email confirmation Prompt
-6. Write flow to automatically close email confirmation prompt
+2. Style Email confirmation Prompt
+3. Write flow to automatically close email confirmation prompt
 
 ## Done
 - ~Actions~

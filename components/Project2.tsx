@@ -11,18 +11,19 @@ export default function Project2() {
 
 
     return (
-        <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
-          <h3 className="text-xl font-bold">Dark Oura</h3>
-            <p className="mt-3">
-                Self Service Analytics Pipeline for Oura Biometric Tracker. 
-            </p>
+        <div>
+            <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
+              <h3 className="text-xl font-bold">Dark Oura</h3>
+                <p className="mt-3">
+                    Self Service Analytics Pipeline for Oura Biometric Tracker. 
+                </p>
 
-            <button
-                className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
-                onClick={handleModalIsOpen}
-            > Learn More 
-            </button> 
-
+                <button
+                    className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    onClick={handleModalIsOpen}
+                > Learn More 
+                </button> 
+            </div>
             
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
                 <h3 className="text-4xl font-semibold mb-2 mt-6 text-center">Dark Oura</h3>

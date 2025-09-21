@@ -11,18 +11,19 @@ export default function Project3() {
 
 
     return (
-        <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
-          <h3 className="text-xl font-bold">Thrasher Webscraping NLP Pipeline</h3>
-            <p className="mt-3">
-                 Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
-            </p>
+        <div>
+            <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
+              <h3 className="text-xl font-bold">Thrasher Webscraping NLP Pipeline</h3>
+                <p className="mt-3">
+                     Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
+                </p>
 
-            <button
-                className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
-                onClick={handleModalIsOpen}
-            > Learn More 
-            </button> 
-
+                <button
+                    className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    onClick={handleModalIsOpen}
+                > Learn More 
+                </button> 
+            </div>
             
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
                 <h1 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">Thrasher Sentiment Analysis</h1>

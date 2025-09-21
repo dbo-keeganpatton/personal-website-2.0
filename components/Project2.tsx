@@ -11,7 +11,7 @@ export default function Project2() {
 
 
     return (
-        <div className="border p-6 rounded-3xl shadow">
+        <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
           <h3 className="text-xl font-bold">Dark Oura</h3>
             <p className="mt-3">
                 Self Service Analytics Pipeline for Oura Biometric Tracker. 

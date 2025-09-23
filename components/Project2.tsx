@@ -19,10 +19,10 @@ export default function Project2() {
                 </p>
 
                 {/* Tech Stack items for project  */}
-                <div className="flex gap-4 pt-4">
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Python      </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Streamlit   </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Viz    </div>
+                <div className="flex flex-wrap gap-4 pt-4">
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Python      </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Streamlit   </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Viz    </div>
                 </div>
                 {/* End Tech Stack */}
 

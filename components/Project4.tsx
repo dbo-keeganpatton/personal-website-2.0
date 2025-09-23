@@ -16,7 +16,7 @@ export default function Project4() {
         <div>
             <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
               <h3 className="text-xl font-bold"> GoQuery </h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                    GCP BigQuery connection app to export full query resultsets to csv. Written in Go. 
                 </p>
 

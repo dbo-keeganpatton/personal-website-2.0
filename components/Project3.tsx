@@ -14,7 +14,7 @@ export default function Project3() {
         <div>
             <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
               <h3 className="text-xl font-bold">Thrasher Webscraping NLP Pipeline</h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                      Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
                 </p>
 

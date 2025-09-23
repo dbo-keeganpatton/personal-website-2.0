@@ -23,14 +23,13 @@ export default function Project1() {
 
                 {/* Tech Stack items for project  */}
                 <div className="flex gap-4 pt-4">
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Python    </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Flask     </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL       </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS  </div>
-                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling   </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Python    </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Flask     </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL       </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS  </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling   </div>
                 </div>
                 {/* End Tech Stack */}
-
 
 
                 <button

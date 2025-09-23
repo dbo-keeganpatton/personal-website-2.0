@@ -14,9 +14,18 @@ export default function Project2() {
         <div>
             <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
               <h3 className="text-xl font-bold">Dark Oura</h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                     Self Service Analytics Pipeline for Oura Biometric Tracker. 
                 </p>
+
+                {/* Tech Stack items for project  */}
+                <div className="flex gap-4 pt-4">
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Python      </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Streamlit   </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Viz    </div>
+                </div>
+                {/* End Tech Stack */}
+
 
                 <button
                     className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"

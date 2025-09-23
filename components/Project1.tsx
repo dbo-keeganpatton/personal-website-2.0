@@ -16,20 +16,20 @@ export default function Project1() {
         <div>
           <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">  
               <h3 className="text-xl font-bold">Branch Library</h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                     Cooperative Web App for Text Editing, written in Flask. 
                 </p>
                 
 
                 {/* Tech Stack items for project  */}
-                <div className="flex gap-4">
-                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Python    </div>
-                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Flask     </div>
-                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   SQL             </div>
-                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   HTML/CSS        </div>
-                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Data Modeling   </div>
+                <div className="flex gap-4 pt-4">
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Python    </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Flask     </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL       </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS  </div>
+                    <div className="flex-1 border-2 border-emerald-700/20 p-1 rounded-lg text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling   </div>
                 </div>
-                {/**/}
+                {/* End Tech Stack */}
 
 
 

@@ -20,6 +20,19 @@ export default function Project1() {
                     Cooperative Web App for Text Editing, written in Flask. 
                 </p>
                 
+
+                {/* Tech Stack items for project  */}
+                <div className="flex gap-4">
+                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Python    </div>
+                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Flask     </div>
+                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   SQL             </div>
+                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   HTML/CSS        </div>
+                    <div className="flex-1 border-2 border-emerald-700 p-1 rounded-lg text-sm bg-emerald-700 text-center">   Data Modeling   </div>
+                </div>
+                {/**/}
+
+
+
                 <button
                     className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}

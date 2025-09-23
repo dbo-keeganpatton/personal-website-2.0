@@ -10,8 +10,8 @@ export default function About() {
         
 		<section className="py-16 max-w-2xl mx-auto">
             
-            <div className="lg:h-45 lg:text-2xl sm:text-1xl flex items-start">
-                <span className="lg:text-2xl sm:text-1xl animate-pulse text-emerald-800 mr-2">❯</span>
+            <div className="h-40 lg:h-45 lg:text-2xl text-1xl flex items-start">
+                <span className="animate-pulse text-emerald-800 mr-2">❯</span>
         
                 <Typewriter
                     onInit={(typewriter) => {

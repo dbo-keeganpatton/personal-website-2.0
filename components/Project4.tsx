@@ -16,9 +16,20 @@ export default function Project4() {
         <div>
             <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
               <h3 className="text-xl font-bold"> GoQuery </h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                    GCP BigQuery connection app to export full query resultsets to csv. Written in Go. 
                 </p>
+
+
+                {/* Tech Stack items for project  */}
+                <div className="flex flex-wrap gap-4 pt-4">
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Golang (Go)      </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Fyne             </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   GCP (BigQuery)   </div>
+                </div>
+                {/* End Tech Stack */}
+
+
 
                 <button
                     className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"

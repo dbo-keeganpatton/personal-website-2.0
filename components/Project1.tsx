@@ -16,10 +16,23 @@ export default function Project1() {
         <div>
           <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">  
               <h3 className="text-xl font-bold">Branch Library</h3>
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                     Cooperative Web App for Text Editing, written in Flask. 
                 </p>
                 
+
+                {/* Tech Stack items for project  */}
+                <div className="flex flex-wrap gap-4 pt-4">
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Python           </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Flask            </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL              </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS         </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling    </div>
+                    <div className="flex-2 grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Heroku           </div>
+                </div>
+                {/* End Tech Stack */}
+
+
                 <button
                     className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}

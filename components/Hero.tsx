@@ -29,7 +29,7 @@ const Hero: FC = () => {
             <h1 className="text-5xl font-bold animate-dust-reveal">Hi, I&#39;m Keegan...</h1>
             
             <button 
-                className="mt-6 inline-block  text-white px-6 py-3 rounded-xl border-4 border-emerald-900 hover:border-red-700"
+                className="mt-6 inline-block  text-white px-6 py-3 rounded-xl border-2 border-emerald-700 hover:border-red-700"
                 onClick={handleOpenModal}
             >
                 Get in Touch

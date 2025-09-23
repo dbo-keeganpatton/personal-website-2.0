@@ -15,7 +15,7 @@ export default function Project1() {
     return (
         <div>
           <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">  
-              <h3 className="text-xl font-bold">Branch Library</h3>
+              <h3 className="text-xl lg:text-2xl font-bold text-emerald-400">Branch Library</h3>
                 <p className="mt-3 text-lg">
                     Cooperative Web App for Text Editing, written in Flask. 
                 </p>

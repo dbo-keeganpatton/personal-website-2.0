@@ -1,7 +1,8 @@
-export default function Job1 () {
+export default function SkillBar () {
     return (
+    
         <div className="border border-amber-50">
-        This is a Job
+            this is a bar
         </div>
     )
 }

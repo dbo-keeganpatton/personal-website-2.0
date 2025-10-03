@@ -10,9 +10,9 @@ export default function Jobs () {
    
         <section className="py-16">
       
-            <h2 className="text-3xl font-semibold text-center mb-10 "> Experience </h2>
+            <h2 className="text-3xl font-semibold text-center mb-5 "> Experience </h2>
       
-            <div className="grid grid-cols-1  gap-8 overflow-visible">
+            <div className="grid grid-cols-1 gap-8 overflow-visible">
      
 
                 {/* Begin Jobs List */} 

@@ -22,7 +22,7 @@ export default function CursorGlow() {
     return (
         <div
             ref={glowRef}
-            className="pointer-events-none fixed z-50 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-800 opacity-20 blur-3xl"
+            className="pointer-events-none fixed z-50 h-150 w-150 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-800/60 opacity-20 blur-3xl"
         />
     )
 }

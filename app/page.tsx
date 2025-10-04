@@ -13,8 +13,10 @@ export default function Home() {
       
             <Hero />
             <About />
-            <Jobs />
-            <Projects />
+            <div className="flex flex-col lg:flex-row gap-4">
+                <div className="flex-1"> <Jobs />      </div>
+                <div className="flex-1"> <Projects />  </div>
+            </div>
             <Contact />
 
         </div>

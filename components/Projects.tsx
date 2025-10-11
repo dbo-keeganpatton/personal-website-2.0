@@ -7,9 +7,13 @@ export default function Projects() {
   
     return (
    
-        <section className="py-16 p-5 lg:p-0">
+        <section className="lg:py-16 py-10 p-5 lg:p-0">
       
-            <h2 className="text-3xl font-semibold text-left lg:text-center mb-5">Projects</h2>
+            <h2 className="text-2xl font-semibold text-left lg:pl-5"> 
+                Projects
+                <span className="text-emerald-500"> ❯ </span>
+            </h2>
+
       
             <div className="flex flex-col gap-4">
 

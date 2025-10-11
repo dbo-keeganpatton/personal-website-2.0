@@ -6,7 +6,7 @@ export default function Jobs () {
   
     return (
    
-        <section className="lg:py-16 p-5 lg:p-0 ">
+        <section className="lg:py-16 p-5 lg:p-0">
       
             <h2 className="text-2xl font-semibold text-left mb-5 lg:pl-5"> 
                 Experience

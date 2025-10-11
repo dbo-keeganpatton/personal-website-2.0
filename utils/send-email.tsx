@@ -1,4 +1,4 @@
-import { FormData } from '@/components/Hero';
+import { FormData } from '@/components/EmailButton';
 
 export function sendEmail(data: FormData) {
 

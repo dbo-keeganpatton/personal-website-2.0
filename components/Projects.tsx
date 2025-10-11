@@ -9,7 +9,7 @@ export default function Projects() {
    
         <section className="py-16 p-5 lg:p-0">
       
-            <h2 className="text-3xl font-semibold text-center mb-10">Projects</h2>
+            <h2 className="text-3xl font-semibold text-left lg:text-center mb-5">Projects</h2>
       
             <div className="flex flex-col gap-4">
 

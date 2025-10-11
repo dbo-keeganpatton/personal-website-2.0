@@ -9,15 +9,16 @@ export default function Project1() {
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
 
-    {/* Create a Modal for this project at some point */}
-
-
     return (
         <div>
-          <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">  
-              <h3 className="text-xl lg:text-2xl font-bold text-emerald-400">Branch Library</h3>
-                <p className="mt-3 text-lg">
-                    Cooperative Web App for Text Editing, written in Flask. 
+          <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
+            
+                {/* Just throwing a space here to line up with job title cols  */}
+                <h1> &nbsp;</h1>
+                <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Branch Library</h3>
+                <p className="text-sm  lg:text-md text-gray-300/80">
+                    Cooperative Web App for Text Editing, written in Flask. Collaborative version control system
+                    for users. Rich text editing.
                 </p>
                 
 

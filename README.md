@@ -8,6 +8,7 @@
 1. Correct tailwind custom animations not computing when sourced from `tailwind.config.js` file
 2. Style Email confirmation Prompt
 3. Write flow to automatically close email confirmation prompt
+4. Add group hover effect to dim unselected components when hovering over a selection
 
 ## Done
 - ~Actions~

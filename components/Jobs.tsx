@@ -1,8 +1,6 @@
 import Job1 from "./Job1"
 import Job2 from "./Job2"
 import Job3 from "./Job3"
-import JobsLine from "./JobLine"
-import SkillBar from "./SkillBar"
 
 export default function Jobs () {
   

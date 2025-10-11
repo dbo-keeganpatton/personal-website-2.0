@@ -5,7 +5,10 @@ export default function Job1 () {
             <h1 className="whitespace-nowrap text-sm text-gray-300/80"> 2023 ➟  Present  </h1>
             
             <div className="flex flex-col">
-                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500"> Senior Data Analyst - Transformation </h1>
+                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
+                    <span className="text-red-500/80"> Walmart  </span>
+                    ❯ Senior Data Analyst 
+                </h1>
                 <p className="text-sm  lg:text-md text-gray-300/80"> 
                     Build and maintain executive reporting to support business-critical transformation initiatives and product analytics. 
                     Take end-to-end ownership of data engineering and analytics processes, including architecting, building, and 

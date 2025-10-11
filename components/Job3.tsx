@@ -4,7 +4,10 @@ export default function Job3 () {
             <h1 className="whitespace-nowrap text-sm text-gray-300/80"> 2021 ➟  2022  </h1>
             
             <div className="flex flex-col">
-                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500"> Associate Systems Analyst  </h1>
+                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500"> 
+                   <span className="text-red-500/80"> PAM Transport  </span>
+                   ❯ Associate Systems Analyst  
+                </h1>
                 <p className="text-sm  lg:text-md text-gray-300/80"> 
                     Developed and maintained operational reporting solutions for Fleet Maintenance and Operations using Power BI and Excel. 
                     Designed and optimized complex DAX measures and leveraged SQL to extract and transform data from on-premise SQL Server 

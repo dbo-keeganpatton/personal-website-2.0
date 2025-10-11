@@ -5,7 +5,10 @@ export default function Job2 () {
             <h1 className="whitespace-nowrap text-sm text-gray-300/80"> 2022 ➟  2023  </h1>
             
             <div className="flex flex-col">
-                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500"> Systems Analyst  </h1>
+                <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500"> 
+                    <span className="text-red-500/80"> PAM Transport </span>
+                    ❯ Systems Analyst
+                </h1>
                 <p className="text-sm  lg:text-md text-gray-300/80"> 
                     Design and develop core semantic data models using Power BI/Power Query to enable operational, financial, and executive reporting. 
                     Build and maintain ETL pipelines to aggregate and cleanse data from diverse sources, ensuring accuracy and availability. 

@@ -14,8 +14,6 @@ export default function Project2() {
         <div>
             <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
 
-                {/* Just throwing a space here to line up with job title cols  */}
-                <h1> &nbsp;</h1>
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Dark Oura</h3>
                 <p className="text-sm  lg:text-md text-gray-300/80">
                     Self Service Analytics Pipeline for Oura Biometric Tracker. 
@@ -31,7 +29,7 @@ export default function Project2() {
 
 
                 <button
-                    className="text-sm mt-6 w-50 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
                 > Learn More 
                 </button> 

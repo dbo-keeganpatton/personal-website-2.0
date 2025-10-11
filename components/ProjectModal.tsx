@@ -15,7 +15,7 @@ const ProjectModal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             onClick={onClose}
         >
             <div 
-                className="bg-black/85 items-center justify-center rounded-lg shadow-emerald-800 shadow-lg p-0 lg:pd-6  w-full max-w-7xl relative  overflow-auto max-h-160"
+                className="bg-black/85 items-center justify-center rounded-lg shadow-emerald-800 shadow-lg p-0 lg:pd-6  w-full max-w-4xl relative  overflow-auto max-h-140"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button 

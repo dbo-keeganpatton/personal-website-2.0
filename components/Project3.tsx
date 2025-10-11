@@ -14,8 +14,6 @@ export default function Project3() {
         <div>
             <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
                 
-                {/* Just throwing a space here to line up with job title cols  */}
-                <h1> &nbsp;</h1>
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Thrasher Webscraping NLP Pipeline</h3>
                 <p className="text-sm  lg:text-md text-gray-300/80">
                      Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
@@ -25,8 +23,6 @@ export default function Project3() {
                 {/* Tech Stack items for project  */}
                 <div className="flex flex-wrap gap-4 pt-4">
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Selenium             </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Web Scraping         </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Language Processing  </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   DBT                  </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Apache Airflow       </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Postgres             </div>
@@ -35,7 +31,7 @@ export default function Project3() {
 
 
                 <button
-                    className="text-sm mt-6 w-50 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
                 > Learn More 
                 </button> 

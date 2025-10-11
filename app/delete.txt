@@ -1,6 +1,0 @@
-                    Design and develop core semantic data models using Power BI/Power Query to enable operational, financial, and executive reporting. 
-                    Build and maintain ETL pipelines to aggregate and cleanse data from diverse sources, ensuring data accuracy and availability. 
-                    Collaborate with leadership to define analytic needs, translating business requirements into actionable insights within the
-                    Business Analytics team. Evaluate and optimize existing technologies and processes to drive 
-                    continuous improvement across the organization.                
- 

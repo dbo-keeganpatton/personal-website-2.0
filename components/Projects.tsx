@@ -7,12 +7,11 @@ export default function Projects() {
   
     return (
    
-        <section className="py-16">
+        <section className="py-16 p-5 lg:p-0">
       
-            <h2 className="text-3xl font-semibold text-center mb-10 ">Projects</h2>
+            <h2 className="text-3xl font-semibold text-left lg:text-center mb-5">Projects</h2>
       
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-visible">
-     
+            <div className="flex flex-col gap-4">
 
                 {/* Begin Project List */} 
                 <Project1 />

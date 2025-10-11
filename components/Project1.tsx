@@ -9,15 +9,16 @@ export default function Project1() {
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
 
-    {/* Create a Modal for this project at some point */}
-
-
-    return (
+   return (
         <div>
-          <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">  
-              <h3 className="text-xl lg:text-2xl font-bold text-emerald-400">Branch Library</h3>
-                <p className="mt-3 text-lg">
-                    Cooperative Web App for Text Editing, written in Flask. 
+            {/* Just throwing a space here to line up with job title cols  */}
+            <h1> &nbsp;</h1>
+            <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
+            
+                <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Branch Library</h3>
+                <p className="text-sm  lg:text-md text-gray-300/80">
+                    Cooperative Web App for Text Editing, written in Flask. Collaborative version control system
+                    for users. Rich text editing.
                 </p>
                 
 
@@ -28,13 +29,12 @@ export default function Project1() {
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL              </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS         </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling    </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Heroku           </div>
                 </div>
                 {/* End Tech Stack */}
 
 
                 <button
-                    className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
                 > Learn More 
                 </button>

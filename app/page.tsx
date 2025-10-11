@@ -10,12 +10,15 @@ export default function Home() {
     return (
     
         <div>
-      
-            <Hero />
-            <About />
-            <div className="flex flex-col lg:flex-row gap-4">
-                <div className="flex-1"> <Jobs />      </div>
-                <div className="flex-1"> <Projects />  </div>
+            <div className="flex flex-col lg:flex-row gap-28"> 
+                <div className="flex-1">
+                    <Hero />
+                    <About />
+                </div>
+                <div className="flex-1 lg:pt-20">
+                    <Jobs />
+                    <Projects />
+                </div>
             </div>
             <Contact />
 

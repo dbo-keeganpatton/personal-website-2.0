@@ -13,8 +13,8 @@ export default function Home() {
                 <div className="lg:flex-1">
                     <div className="lg:fixed lg:pt-5">
                         <div className="lg:fixed lg:pl-10"> <Greeting /> </div>
-                        <div className="lg:fixed lg:max-w-lg lg:pt-52"> <About /> </div>
-                        <div className="lg:fixed lg:pt-110 lg:pl-40"> <EmailButton /> </div> 
+                        <div className="lg:fixed lg:max-w-lg lg:pt-40"> <About /> </div>
+                        <div className="lg:fixed lg:pt-100 lg:pl-40"> <EmailButton /> </div> 
                     </div>
                 </div>
                 <div className="lg:flex-1">

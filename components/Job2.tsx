@@ -9,7 +9,7 @@ export default function Job2 () {
                     <span className="text-red-500/80"> PAM Transport </span>
                     ❯ Systems Analyst
                 </h1>
-                <p className="text-sm  lg:text-md text-gray-300/80"> 
+                <p className="text-sm  lg:text-md text-white"> 
                     Design and develop core semantic data models using Power BI/Power Query to enable operational, financial, and executive reporting. 
                     Build and maintain ETL pipelines to aggregate and cleanse data from diverse sources, ensuring accuracy and availability. 
                     Collaborate with leadership to define analytic needs, requirements into actionable insights within the

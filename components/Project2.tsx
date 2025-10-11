@@ -15,7 +15,7 @@ export default function Project2() {
             <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
 
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Dark Oura</h3>
-                <p className="text-sm  lg:text-md text-gray-300/80">
+                <p className="text-sm  lg:text-md text-white">
                     Self Service Analytics Pipeline for Oura Biometric Tracker. 
                 </p>
 

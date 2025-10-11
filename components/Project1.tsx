@@ -16,7 +16,7 @@ export default function Project1() {
             <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
             
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Branch Library</h3>
-                <p className="text-sm  lg:text-md text-gray-300/80">
+                <p className="text-sm  lg:text-md text-white">
                     Cooperative Web App for Text Editing, written in Flask. Collaborative version control system
                     for users. Rich text editing.
                 </p>

@@ -11,10 +11,10 @@ export default function Home() {
         <div>
             <div className="flex flex-col lg:flex-row lg:gap-28"> 
                 <div className="lg:flex-1">
-                    <div className="lg:fixed lg:pt-20">
-                        <div className="lg:fixed lg:pl-20"> <Greeting /> </div>
+                    <div className="lg:fixed lg:pt-5">
+                        <div className="lg:fixed lg:pl-10"> <Greeting /> </div>
                         <div className="lg:fixed lg:max-w-lg lg:pt-52"> <About /> </div>
-                        <div className="lg:fixed lg:pt-110 lg:pl-45"> <EmailButton /> </div> 
+                        <div className="lg:fixed lg:pt-110 lg:pl-40"> <EmailButton /> </div> 
                     </div>
                 </div>
                 <div className="lg:flex-1">

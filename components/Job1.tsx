@@ -9,7 +9,7 @@ export default function Job1 () {
                     <span className="text-red-500/80"> Walmart  </span>
                     ❯ Senior Data Analyst 
                 </h1>
-                <p className="text-sm  lg:text-md text-gray-300/80"> 
+                <p className="text-sm  lg:text-md text-white"> 
                     Build and maintain executive reporting to support business-critical transformation initiatives and product analytics. 
                     Take end-to-end ownership of data engineering and analytics processes, including architecting, building, and 
                     maintaining production data pipelines in a cloud data warehouse. Apply data modeling principles to design optimized, 

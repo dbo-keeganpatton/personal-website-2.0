@@ -8,7 +8,6 @@ import EmailButton from '@/components/EmailButton'
 export default function Home() {
   
     return (
-   
         <div>
             <div className="flex flex-col lg:flex-row lg:gap-28"> 
                 <div className="lg:flex-1">

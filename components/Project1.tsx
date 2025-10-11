@@ -9,7 +9,7 @@ export default function Project1() {
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
 
-    return (
+   return (
         <div>
           <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
             
@@ -29,13 +29,12 @@ export default function Project1() {
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   SQL              </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   HTML/CSS         </div>
                     <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Data Modeling    </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Heroku           </div>
                 </div>
                 {/* End Tech Stack */}
 
 
                 <button
-                    className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    className="text-sm mt-6 w-50 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
                 > Learn More 
                 </button>

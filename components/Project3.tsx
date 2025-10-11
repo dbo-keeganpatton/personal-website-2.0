@@ -12,9 +12,12 @@ export default function Project3() {
 
     return (
         <div>
-            <div className="border p-6 rounded-3xl shadow transform transition duration-300 ease-in-out hover:scale-105">
-              <h3 className="text-xl lg:text-2xl font-bold text-emerald-400">Thrasher Webscraping NLP Pipeline</h3>
-                <p className="mt-3 text-lg">
+            <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
+                
+                {/* Just throwing a space here to line up with job title cols  */}
+                <h1> &nbsp;</h1>
+                <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">Thrasher Webscraping NLP Pipeline</h3>
+                <p className="text-sm  lg:text-md text-gray-300/80">
                      Scrape, Process, and store data from ThrasherMagazine for NLP sentiment analysis.
                 </p>
                 
@@ -32,7 +35,7 @@ export default function Project3() {
 
 
                 <button
-                    className="text-sm mt-6 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
+                    className="text-sm mt-6 w-50 border-2 border-emerald-700 rounded-xl p-2 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
                 > Learn More 
                 </button> 

@@ -8,7 +8,7 @@ export default function Job3 () {
                    <span className="text-red-500/80"> PAM Transport  </span>
                    ❯ Associate Systems Analyst  
                 </h1>
-                <p className="text-sm  lg:text-md text-gray-300/80"> 
+                <p className="text-sm  lg:text-md text-white"> 
                     Developed and maintained operational reporting solutions for Fleet Maintenance and Operations using Power BI and Excel. 
                     Designed and optimized complex DAX measures and leveraged SQL to extract and transform data from on-premise SQL Server 
                     and MySQL databases. Managed and enhanced core semantic data models to support organization-wide reporting and data-driven 

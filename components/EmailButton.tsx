@@ -24,7 +24,7 @@ const EmailButton: FC = () => {
     const handleCloseModal = () => setIsModalOpen(false);
 
     return (    
-        <section className="lg:py-10 text-center">
+        <section className="lg:py-10 py-20 text-center">
             <button 
                 className="mt-6 inline-block  text-white px-6 py-2 rounded-xl border-2 border-emerald-700 hover:border-red-700"
                 onClick={handleOpenModal}

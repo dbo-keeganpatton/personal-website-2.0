@@ -8,7 +8,10 @@ export default function Jobs () {
    
         <section className="lg:py-16 p-5 lg:p-0 ">
       
-            <h2 className="text-3xl font-semibold text-left mb-5"> Experience </h2>
+            <h2 className="text-2xl font-semibold text-left mb-5 lg:pl-5"> 
+                Experience
+                <span className="text-emerald-500"> ❯ </span>
+            </h2>
       
             <div className="flex flex-col gap-4">
      

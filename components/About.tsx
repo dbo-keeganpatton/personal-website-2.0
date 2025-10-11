@@ -8,7 +8,7 @@ export default function About() {
     
 	return (
         
-		<section className="lg:py-5 max-w-2xl mx-auto">
+		<section className="lg:py-5 py-5 max-w-2xl mx-auto">
             
             <div className="h-40 lg:h-45 lg:text-xl text-1xl flex items-start">
                 <span className="animate-pulse text-emerald-800 mr-2">❯</span>

@@ -17,7 +17,7 @@ export default function Home() {
                         <div className="lg:fixed lg:pt-110 lg:pl-45"> <EmailButton /> </div> 
                     </div>
                 </div>
-                <div className="lg:flex-1 lg:pt-20">
+                <div className="lg:flex-1">
                     <Jobs />
                     <Projects />
                 </div>

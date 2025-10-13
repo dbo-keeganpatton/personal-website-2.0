@@ -17,7 +17,7 @@ export default function About() {
                     onInit={(typewriter) => {
                         typewriter
                             .typeString(
-                                `Hello! I am an analytics engineer currently working for Walmart. 
+                                `I am an analytics engineer currently working for Walmart. 
                                 In my free time I spend a lot of time playing around with databases, 
                                 building pipelines, managing devops workflows, and making poorly designed 
                                 web apps. I love to talk about technology, so feel free to reach out by 

@@ -16,7 +16,11 @@ export default function Project5() {
         <div>
             <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
 
-                <h3 className="text-md font-bold pb-3 lg:pr-5 text-red-500/80"> This Website! </h3>
+                <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
+                <span className="text-red-500/80 text-md"> Web Development </span>
+
+                    ❯ This Website! 
+                </h3>
                 <p className="text-sm  lg:text-md text-white">
                    Docker containerized Next.JS application using TailwindCSS to manage styling. Hosted on Heroku, using 
                    Github Actions for CI/CD deployment pipeline.

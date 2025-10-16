@@ -10,7 +10,7 @@ export default function Projects() {
    
         <section className="lg:py-16 py-10 p-5 lg:p-0">
       
-            <h2 className="text-2xl font-semibold text-left lg:pl-5"> 
+            <h2 className="text-2xl font-semibold text-left lg:pl-5 lg:text-3xl"> 
                 Projects
                 <span className="text-emerald-500"> ❯ </span>
             </h2>

@@ -59,7 +59,7 @@ export default function Project5() {
                         deployments.
                     </p>
 
-                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Application UI </h1>
+                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Development Lifecycle </h1>
                     <hr className="pb-4"/>
                     <img src="/app_deployment.png" alt="Pipeline Diagram" />
 

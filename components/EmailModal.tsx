@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface ModalProps {
     isOpen: boolean;
@@ -7,30 +9,37 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
-    if (!isOpen) return null;
-  
-    return (
-        <div 
-            className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800/30 backdrop-blur-xs  duration-200"
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        return () => setMounted(false);
+    }, []);
+
+    if (!isOpen || !mounted) return null;
+
+    return createPortal(
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800/30 backdrop-blur-xs duration-200"
             onClick={onClose}
         >
-            <div 
+            <div
                 className="bg-black/90 rounded-lg shadow-emerald-800 shadow-lg p-6 w-full max-w-md mx-4 relative"
                 onClick={(e) => e.stopPropagation()}
             >
-                <button 
+                <button
                     className="absolute top-0 right-2 text-emerald-500 hover:text-red-700 text-3xl font-bold"
                     onClick={onClose}
                     aria-label="Close Modal"
                 >
                     &times;
                 </button>
-        
+
                 {children}
             </div>
-        </div>
+        </div>,
+        document.body
     );
 };
 
 export default Modal;
-

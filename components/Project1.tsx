@@ -13,7 +13,7 @@ export default function Project1() {
         <div>
             {/* Just throwing a space here to line up with job title cols  */}
             <h1> &nbsp;</h1>
-            <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
+            <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">  
             
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
                     <span className="text-red-500/80 text-md"> Web Development </span>

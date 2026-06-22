@@ -1,7 +1,7 @@
 export default function Job2 () {
     return (
 
-        <div className="flex flex-col hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
+        <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
             <h1 className="whitespace-nowrap text-sm text-gray-300/80"> 2022 ➟  2023  </h1>
             
             <div className="flex flex-col">

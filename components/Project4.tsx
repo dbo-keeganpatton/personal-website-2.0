@@ -1,84 +1,50 @@
-'use client'
-import { useState } from "react"
-import ProjectModal from "./ProjectModal";
-
-
-export default function Project4() {
-
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const handleModalIsOpen = () => setModalIsOpen(true);
-    const handleSetModalIsOpen = () => setModalIsOpen(false);
-
-
+export default function Project4Content() {
     return (
-        <div>
-            <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
+        <>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-2 mt-8 text-center text-white">BigQuery Export App</h2>
 
-                <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
-                    <span className="text-red-500/80 text-md"> App Development </span>
-                    ❯ GoQuery
-                </h3>
-                <p className="text-sm  lg:text-md text-white">
-                   GCP BigQuery connection app to export full query resultsets to csv. Written in Go.
-                </p>
-
-                {/* Tech Stack items for project  */}
-                <div className="flex flex-wrap gap-4 pt-4">
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Golang (Go)      </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   Fyne             </div>
-                    <div className="flex-initial grow-0 border-2 border-emerald-700/20 p-1 rounded-xl text-sm bg-emerald-700/20 text-center text-emerald-300">   GCP (BigQuery)   </div>
-                </div>
-                {/* End Tech Stack */}
-
-                <button
-                    className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
-                    onClick={handleModalIsOpen}
-                    aria-label="Learn more about GoQuery"
-                >
-                    Learn More
-                </button>
-            </div>
-
-            <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-
-                <h2 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">BigQuery Export App</h2>
-                <div className="flex flex-col p-15">
-
-                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> Purpose </h3>
-                    <hr className="pb-3" />
-                    <p className="text-sm lg:text-2xl pb-6">
-                        Native Bigquery resultset csv exports are incomplete. This application enables a low code solution
-                        requiring no client libraries or dependencies. Written and packaged using Golang, enabling a cross
-                        platform UI for efficient data extraction.
+            <div className="flex flex-col px-8 pb-10 pt-4 gap-8">
+                <div>
+                    <h3 className="text-sm font-semibold text-slate-300 mb-2">Purpose</h3>
+                    <hr className="border-white/10 mb-4" />
+                    <p className="text-sm text-slate-400 leading-relaxed">
+                        Native BigQuery resultset CSV exports are incomplete. This app provides a low-code solution
+                        requiring no client libraries or extra dependencies — packaged in Go for a cross-platform
+                        native UI.
                     </p>
+                </div>
 
-                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> Application UI </h3>
-                    <hr className="pb-4"/>
-                    <img src="/GoQu.png" alt="GoQuery application user interface" />
+                <div>
+                    <h3 className="text-sm font-semibold text-slate-300 mb-2">Application UI</h3>
+                    <hr className="border-white/10 mb-4" />
+                    <img src="/GoQu.png" alt="GoQuery application user interface" className="rounded border border-white/10" />
+                </div>
 
-                    <h3 className="text-xl lg:text-3xl pb-3 font-bold pt-6">Tooling</h3>
-                    <hr />
-                    <ol className="list-decimal text-md lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
-                        <li> Golang </li>
-                        <li> Fyne (UI Viz) </li>
+                <div>
+                    <h3 className="text-sm font-semibold text-slate-300 mb-2">Tooling</h3>
+                    <hr className="border-white/10 mb-4" />
+                    <ol className="list-decimal text-sm text-slate-400 pl-5 space-y-1">
+                        <li>Golang</li>
+                        <li>Fyne (UI framework)</li>
                     </ol>
-
-                    <h3 className="text-xl lg:text-3xl pb-3 font-bold pt-6"> Application Use </h3>
-                    <hr className="pb-4"/>
-                    <p className="text-sm lg:text-2xl pb-6">
-                        Download the GoQuery.zip and unzip on Mac, or download and execute the GoQuery.exe program on Windows.
-                        Input your billing project and query string and click Run.
-                    </p>
-
-                    <a href="https://github.com/dbo-keeganpatton/GoQuery/tree/main"
-                        className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
-                    >
-                        Visit the Repository
-                    </a>
-
                 </div>
-            </ProjectModal>
 
-         </div>
+                <div>
+                    <h3 className="text-sm font-semibold text-slate-300 mb-2">Usage</h3>
+                    <hr className="border-white/10 mb-4" />
+                    <p className="text-sm text-slate-400 leading-relaxed">
+                        Download GoQuery.zip and unzip on Mac, or download and run GoQuery.exe on Windows.
+                        Input your billing project and query string, then click Run.
+                    </p>
+                </div>
+
+                <a
+                    href="https://github.com/dbo-keeganpatton/GoQuery/tree/main"
+                    className="text-center text-sm border border-emerald-800 text-emerald-400 rounded py-2.5 hover:bg-emerald-950 transition-colors duration-200"
+                >
+                    Visit the Repository →
+                </a>
+            </div>
+        </>
     )
 }

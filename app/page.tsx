@@ -1,25 +1,17 @@
-import Greeting from '@/components/Greeting'
-import About from '@/components/About'
-import Projects from '@/components/Projects'
+import Sidebar from '@/components/Sidebar'
 import Jobs from '@/components/Jobs'
-
+import Projects from '@/components/Projects'
 
 export default function Home() {
-
     return (
-        <div>
-            <div className="flex flex-col lg:flex-row lg:gap-28">
-                <div className="lg:flex-1">
-                    <div className="lg:fixed lg:pt-5">
-                        <div className="lg:fixed lg:pl-10"> <Greeting /> </div>
-                        <div className="lg:fixed lg:max-w-lg lg:pt-40"> <About /> </div>
-                    </div>
-                </div>
-                <div className="lg:flex-1">
-                    <Jobs />
-                    <Projects />
-                </div>
-            </div>
+        <div className="max-w-6xl mx-auto lg:flex lg:gap-0">
+            <header className="lg:w-[45%] lg:sticky lg:top-0 lg:h-screen lg:border-r lg:border-white/5">
+                <Sidebar />
+            </header>
+            <main id="main-content" className="lg:w-[55%] px-6 py-16 lg:px-16 lg:py-24">
+                <Jobs />
+                <Projects />
+            </main>
         </div>
     )
 }

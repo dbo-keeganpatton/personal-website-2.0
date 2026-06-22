@@ -38,10 +38,10 @@ export default function Sidebar() {
     }, [])
 
     return (
-        <aside className="flex flex-col h-full px-8 py-16 lg:py-24 lg:px-10">
+        <aside className="flex flex-col h-full px-8 py-10 lg:py-12 lg:px-10">
 
             {/* ── Identity ────────────────────────────────── */}
-            <div className="mb-10">
+            <div className="mb-6">
                 <h1 className="text-4xl lg:text-5xl font-bold text-white leading-[1.1] mb-3 name-glow">
                     Keegan<br className="hidden lg:block" />{' '}
                     <span className="lg:hidden"> </span>Patton
@@ -57,7 +57,7 @@ export default function Sidebar() {
             </div>
 
             {/* ── Bio ─────────────────────────────────────── */}
-            <p className="text-slate-500 text-sm leading-relaxed mb-12 max-w-sm">
+            <p className="text-slate-500 text-sm leading-relaxed mb-8 max-w-sm">
                 I build data infrastructure at Walmart. In my spare time I mess around with
                 databases, pipelines, devops, and the occasional poorly designed web app.
                 Always happy to talk tech — reach out any time.
@@ -94,30 +94,32 @@ export default function Sidebar() {
             </nav>
 
             {/* ── Socials + contact ───────────────────────── */}
-            <div className="mt-12 space-y-5">
+            <div className="mt-10 lg:mt-0 space-y-4">
                 <button
                     onClick={() => setModalOpen(true)}
                     aria-label="Open contact form"
-                    className="flex items-center gap-2.5 text-sm text-slate-500 hover:text-emerald-400 transition-colors duration-200"
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded border border-emerald-800 text-emerald-400 text-sm hover:bg-emerald-950 hover:border-emerald-600 transition-colors duration-200"
                 >
-                    <span aria-hidden="true" className="text-xs opacity-70">✉</span>
+                    <Image src="/mail-svgrepo-com.svg" alt="" width={18} height={18} unoptimized />
                     Get in touch
                 </button>
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-4">
                     <Link
                         href="https://github.com/dbo-keeganpatton"
                         aria-label="Keegan Patton on GitHub"
-                        className="opacity-30 hover:opacity-90 transition-opacity duration-200"
+                        className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border border-slate-600 text-slate-300 text-xs hover:border-slate-400 hover:text-white transition-colors duration-200"
                     >
-                        <Image src="/github-svgrepo-com.svg" alt="" width={20} height={20} unoptimized />
+                        <Image src="/github-svgrepo-com.svg" alt="" width={16} height={16} unoptimized />
+                        GitHub
                     </Link>
                     <Link
                         href="https://www.linkedin.com/in/keeganpatton/"
                         aria-label="Keegan Patton on LinkedIn"
-                        className="opacity-30 hover:opacity-90 transition-opacity duration-200"
+                        className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border border-slate-600 text-slate-300 text-xs hover:border-slate-400 hover:text-white transition-colors duration-200"
                     >
-                        <Image src="/linkedin-svgrepo-com.svg" alt="" width={20} height={20} unoptimized />
+                        <Image src="/linkedin-svgrepo-com.svg" alt="" width={16} height={16} unoptimized />
+                        LinkedIn
                     </Link>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import ProjectModal from "./ProjectModal";
 
 
 export default function Project2() {
-   
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
@@ -15,12 +15,11 @@ export default function Project2() {
             <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
 
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
-                <span className="text-red-500/80 text-md"> Data Engineering </span>
-
-                    ❯ Dark Oura 
+                    <span className="text-red-500/80 text-md"> Data Engineering </span>
+                    ❯ Dark Oura
                 </h3>
                 <p className="text-sm  lg:text-md text-white">
-                    Self Service Analytics Pipeline for Oura Biometric Tracker. 
+                    Self Service Analytics Pipeline for Oura Biometric Tracker.
                 </p>
 
                 {/* Tech Stack items for project  */}
@@ -31,53 +30,50 @@ export default function Project2() {
                 </div>
                 {/* End Tech Stack */}
 
-
                 <button
                     className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
-                > Learn More 
-                </button> 
+                    aria-label="Learn more about Dark Oura"
+                >
+                    Learn More
+                </button>
             </div>
-            
+
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
-                <h3 className="text-4xl font-semibold mb-2 mt-6 text-center">Dark Oura</h3>
+                <h2 className="text-4xl font-semibold mb-2 mt-6 text-center">Dark Oura</h2>
                 <div className="flex flex-col p-15">
-                     
 
-					<h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Purpose </h1>
-					<hr className="pb-4" />
+                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> Purpose </h3>
+                    <hr className="pb-4" />
                     <p className="text-sm lg:text-2xl pb-6">
-                        Automated self service analytics pipeline using the Oura Ring V2 API and Streamlit. 
-                        The user can obtain an API token from oura directly and generate using that. Secrets 
-                        are used for the API call but are not stored 
-                        in any way.
+                        Automated self service analytics pipeline using the Oura Ring V2 API and Streamlit.
+                        The user can obtain an API token from oura directly and generate using that. Secrets
+                        are used for the API call but are not stored in any way.
                     </p>
-                    <img src="/sample_token.png" alt="sample token" className="pb-12" />
+                    <img src="/sample_token.png" alt="Oura API token input screen" className="pb-12" />
 
-
-                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> App UX Flow </h1>
+                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> App UX Flow </h3>
                     <hr className="pb-4"/>
                     <p className="text-sm lg:text-2xl pb-6">
                         Biometric data is extracted via a custom package I made, Ourapi.py, that standardizes
-                        programattic extraction of data from the Oura Ring V2 API. This data is then processed 
-                        using pandas and stored in memory within the Streamlit app. The data is visualized into 
+                        programattic extraction of data from the Oura Ring V2 API. This data is then processed
+                        using pandas and stored in memory within the Streamlit app. The data is visualized into
                         3 distinct categories, sleep, stress and activity. The user can define a time
-                        frame of data to pull upon extraction.                    
+                        frame of data to pull upon extraction.
                     </p>
 
-
-                    <img src="/sample.png" alt="site-schema" />
+                    <img src="/sample.png" alt="Dark Oura app dashboard showing biometric data" />
                     <hr className="pb-12 pt-6" />
 
-                    <a  href="https://darkoura.streamlit.app/"
-						className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
-                    > Visit the Site </a>
+                    <a href="https://darkoura.streamlit.app/"
+                        className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
+                    >
+                        Visit the Site
+                    </a>
 
-				</div>
+                </div>
 
            </ProjectModal>
-
-
 
          </div>
     )

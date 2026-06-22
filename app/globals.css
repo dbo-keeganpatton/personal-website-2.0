@@ -165,5 +165,17 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-dust-reveal {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
 
+  #stars,
+  #stars2 {
+    animation: none;
+  }
+}
 

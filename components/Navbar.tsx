@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { sendEmail } from "@/utils/send-email";
 import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -40,14 +41,14 @@ const Navbar: FC = () => {
 
             <div className="flex items-center">
 
-                <Link href="https://www.linkedin.com/in/keeganpatton/" className="mr-5 transition-opacity duration-200 hover:opacity-70">
-                    <img src="/linkedin-svgrepo-com.svg" alt="Keegan Patton Linkedin" width={55} height={55} />
+                <Link href="https://www.linkedin.com/in/keeganpatton/" className="mr-5 transition-opacity duration-200 hover:opacity-70" aria-label="Keegan Patton on LinkedIn">
+                    <Image src="/linkedin-svgrepo-com.svg" alt="" width={55} height={55} unoptimized />
                 </Link>
-                <Link href="https://github.com/dbo-keeganpatton" className="mr-5 transition-opacity duration-200 hover:opacity-70">
-                    <img src="/github-svgrepo-com.svg" alt="Keegan Patton Github" width={50} height={50} />
+                <Link href="https://github.com/dbo-keeganpatton" className="mr-5 transition-opacity duration-200 hover:opacity-70" aria-label="Keegan Patton on GitHub">
+                    <Image src="/github-svgrepo-com.svg" alt="" width={50} height={50} unoptimized />
                 </Link>
-                <button onClick={handleOpenModal} className="transition-opacity duration-200 hover:opacity-70">
-                    <img src="/mail-svgrepo-com.svg" alt="Send an Email" width={60} height={60} />
+                <button onClick={handleOpenModal} className="transition-opacity duration-200 hover:opacity-70" aria-label="Open contact form">
+                    <Image src="/mail-svgrepo-com.svg" alt="" width={60} height={60} unoptimized />
                 </button>
 
                 <Modal isOpen={isModalOpen} onClose={handleCloseModal}>

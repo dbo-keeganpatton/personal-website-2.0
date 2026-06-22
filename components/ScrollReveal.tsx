@@ -6,6 +6,11 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
     const [visible, setVisible] = useState(false)
 
     useEffect(() => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            setVisible(true)
+            return
+        }
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -22,7 +27,7 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
     return (
         <div
             ref={ref}
-            className={`transition-all duration-500 ${
+            className={`motion-reduce:opacity-100 motion-reduce:translate-y-0 transition-all duration-500 ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
         >

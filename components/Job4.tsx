@@ -1,13 +1,15 @@
 export default function Job4() {
   return (
     <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
-      <h1 className="whitespace-nowrap text-sm text-gray-300/80"> 2025 ➟  Present  </h1>
+      <p className="whitespace-nowrap text-sm text-gray-300/80">
+        <time dateTime="2025">2025</time> ➟ Present
+      </p>
 
       <div className="flex flex-col">
-        <h1 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
+        <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
           <span className="text-red-500/80"> Walmart Global Tech  </span>
           ❯ Data Engineer III
-        </h1>
+        </h3>
 
         {/* Tech Stack items */}
         <div className="flex flex-wrap gap-4 pt-4">

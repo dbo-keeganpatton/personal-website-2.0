@@ -3,13 +3,11 @@ import { useState } from "react"
 import ProjectModal from "./ProjectModal";
 
 
-
 export default function Project5() {
-   
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const handleModalIsOpen = () => setModalIsOpen(true);
     const handleSetModalIsOpen = () => setModalIsOpen(false);
-
 
 
     return (
@@ -17,15 +15,13 @@ export default function Project5() {
             <div className="flex flex-col transition-all duration-200 hover:border hover:border-white/5 hover:rounded-lg hover:bg-white/5 hover:text-emerald-500 lg:p-5">
 
                 <h3 className="text-md font-bold pb-3 lg:pr-5 text-emerald-500">
-                <span className="text-red-500/80 text-md"> Web Development </span>
-
-                    ❯ This Website! 
+                    <span className="text-red-500/80 text-md"> Web Development </span>
+                    ❯ This Website!
                 </h3>
                 <p className="text-sm  lg:text-md text-white">
-                   Docker containerized Next.JS application using TailwindCSS to manage styling. Hosted on Heroku, using 
+                   Docker containerized Next.JS application using TailwindCSS to manage styling. Hosted on Heroku, using
                    Github Actions for CI/CD deployment pipeline.
                 </p>
-
 
                 {/* Tech Stack items for project  */}
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -36,21 +32,21 @@ export default function Project5() {
                 </div>
                 {/* End Tech Stack */}
 
-
-
                 <button
                     className="text-sm mt-6 w-25 border-2 border-emerald-700 rounded-xl p-1 text-md hover:border-red-800"
                     onClick={handleModalIsOpen}
-                > Learn More 
-                </button>  
+                    aria-label="Learn more about this website"
+                >
+                    Learn More
+                </button>
             </div>
 
             <ProjectModal isOpen={modalIsOpen} onClose={handleSetModalIsOpen}>
 
-                <h1 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">Personal Website</h1>
+                <h2 className="text-3xl lg:text-4xl font-semibold mb-2 mt-6 text-center">Personal Website</h2>
                 <div className="flex flex-col p-15">
- 
-                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Purpose </h1>
+
+                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> Purpose </h3>
                     <hr className="pb-3" />
                     <p className="text-sm lg:text-2xl pb-6">
                         Personal workspace where I can test new things, and advertise my experience and the things that I enjoy
@@ -59,12 +55,11 @@ export default function Project5() {
                         deployments.
                     </p>
 
-                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold"> Development Lifecycle </h1>
+                    <h3 className="text-xl lg:text-3xl pb-3 font-bold"> Development Lifecycle </h3>
                     <hr className="pb-4"/>
-                    <img src="/app_deployment.png" alt="Pipeline Diagram" />
+                    <img src="/app_deployment.png" alt="CI/CD deployment pipeline diagram" />
 
-
-                    <h1 className="text-xl  lg:text-3xl pb-3 font-bold pt-6">Tooling </h1>
+                    <h3 className="text-xl lg:text-3xl pb-3 font-bold pt-6">Tooling</h3>
                     <hr />
                     <ol className="list-decimal text-md lg:text-xl pl-5 lg:pl-10 pt-4 pb-1">
                         <li> React (Next.JS)  </li>
@@ -74,16 +69,14 @@ export default function Project5() {
                         <li> Linux </li>
                     </ol>
 
-
-                    <a  href="https://github.com/dbo-keeganpatton/personal-website-2.0"
+                    <a href="https://github.com/dbo-keeganpatton/personal-website-2.0"
                         className="text-2xl text-center border-3 rounded-md border-emerald-800 hover:bg-red-700 p-2 m-5"
-                    > 
-                        Visit the Repository 
+                    >
+                        Visit the Repository
                     </a>
 
                 </div>
             </ProjectModal>
-
 
          </div>
     )

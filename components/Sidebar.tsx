@@ -8,7 +8,7 @@ import Modal from './EmailModal'
 
 type FormData = { email: string; subject: string; message: string }
 
-const NAV = [
+const SECTION_NAV = [
     { href: '#experience', label: 'Experience' },
     { href: '#projects',   label: 'Projects'   },
 ]
@@ -25,7 +25,7 @@ export default function Sidebar() {
     }
 
     useEffect(() => {
-        const targets = NAV.map(n => document.getElementById(n.href.slice(1))).filter(Boolean) as HTMLElement[]
+        const targets = SECTION_NAV.map(n => document.getElementById(n.href.slice(1))).filter(Boolean) as HTMLElement[]
         const obs = new IntersectionObserver(
             entries => {
                 const hit = entries.find(e => e.isIntersecting)
@@ -67,7 +67,7 @@ export default function Sidebar() {
             {/* ── Section nav ─────────────────────────────── */}
             <nav aria-label="Page sections" className="mb-auto">
                 <ul className="space-y-5">
-                    {NAV.map(({ href, label }) => {
+                    {SECTION_NAV.map(({ href, label }) => {
                         const id = href.slice(1)
                         const on = active === id
                         return (
@@ -106,6 +106,13 @@ export default function Sidebar() {
                 </button>
 
                 <div className="flex items-center gap-4">
+                    <Link
+                        href="/blog"
+                        aria-label="Blog"
+                        className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border border-slate-600 text-slate-300 text-xs hover:border-slate-400 hover:text-white transition-colors duration-200"
+                    >
+                        Blog
+                    </Link>
                     <Link
                         href="https://github.com/dbo-keeganpatton"
                         aria-label="Keegan Patton on GitHub"

@@ -6,9 +6,9 @@ const jobs = [
         company: 'Walmart Global Tech',
         role: 'Data Engineer III',
         description:
-            'Build and maintain large-scale data pipelines processing enterprise retail data. ' +
-            'Drive architecture decisions for team data infrastructure across distributed compute environments.',
-        tech: ['Scala', 'Airflow', 'Spark', 'SQL'],
+            'Build and maintain large-scale data pipelines processing enterprise device and software telemetry data. ' +
+            'Develop architecture for team data infrastructure across distributed compute environments.',
+        tech: ['Scala', 'Airflow', 'Spark', 'SQL', 'Kubernetes'],
     },
     {
         start: '2023', end: '2025',

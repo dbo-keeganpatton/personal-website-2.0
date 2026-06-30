@@ -48,7 +48,7 @@ export default function Sidebar() {
                 </h1>
                 <p className="text-emerald-400 text-sm font-mono flex items-center gap-2">
                     <span aria-hidden="true">❯</span>
-                    Data Engineer III
+                    Hello There... 
                     <span
                         className="inline-block w-[9px] h-[1.1em] bg-emerald-400 cursor-blink translate-y-[1px]"
                         aria-hidden="true"
@@ -58,9 +58,10 @@ export default function Sidebar() {
 
             {/* ── Bio ─────────────────────────────────────── */}
             <p className="text-slate-500 text-sm leading-relaxed mb-8 max-w-sm">
-                I build data infrastructure at Walmart. In my spare time I mess around with
-                databases, pipelines, devops, and the occasional poorly designed web app.
-                Always happy to talk tech — reach out any time.
+                By day I build data infrastructure at Walmart. In my spare time I tinker with various
+                forms of technology, skateboard with my friends, work on cars, and really anything else
+                that interests me at the time. Always happy to meet and talk to new people. Reach out
+                anytime.
             </p>
 
             {/* ── Section nav ─────────────────────────────── */}

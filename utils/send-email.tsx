@@ -4,18 +4,19 @@ export type FormData = {
     message: string;
 };
 
-export function sendEmail(data: FormData) {
-
-    const apiEndpoint = '/api/email';
-    fetch(apiEndpoint, {
-        method: 'POST',
-        body: JSON.stringify(data),
-    })
-        .then((res) => res.json())
-        .then((response) => {
-            alert(response.message);
-        })
-        .catch((err) => {
-           alert(err);
+export async function sendEmail(data: FormData): Promise<{ ok: boolean; message: string }> {
+    try {
+        const res = await fetch('/api/email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
         });
+        const json = await res.json();
+        if (!res.ok) {
+            return { ok: false, message: json.error ?? 'Something went wrong.' };
+        }
+        return { ok: true, message: json.message };
+    } catch {
+        return { ok: false, message: 'Network error, please try again.' };
+    }
 }

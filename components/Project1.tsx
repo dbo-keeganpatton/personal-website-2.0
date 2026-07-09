@@ -45,6 +45,8 @@ export default function Project1Content() {
 
                 <a
                     href="https://branchlibrary-8478c72f5159.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-center text-sm border border-emerald-800 text-emerald-400 rounded py-2.5 hover:bg-emerald-950 transition-colors duration-200"
                 >
                     Visit the Site →

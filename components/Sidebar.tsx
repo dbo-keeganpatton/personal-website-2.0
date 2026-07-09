@@ -13,15 +13,32 @@ const SECTION_NAV = [
     { href: '#projects',   label: 'Projects'   },
 ]
 
+type SendStatus =
+    | { state: 'idle' }
+    | { state: 'sending' }
+    | { state: 'sent'; message: string }
+    | { state: 'error'; message: string }
+
 export default function Sidebar() {
     const [active, setActive]       = useState('')
     const [modalOpen, setModalOpen] = useState(false)
+    const [status, setStatus]       = useState<SendStatus>({ state: 'idle' })
     const { register, handleSubmit, reset } = useForm<FormData>()
 
-    function onSubmit(data: FormData) {
-        sendEmail(data)
-        reset()
+    async function onSubmit(data: FormData) {
+        setStatus({ state: 'sending' })
+        const result = await sendEmail(data)
+        if (result.ok) {
+            reset()
+            setStatus({ state: 'sent', message: result.message })
+        } else {
+            setStatus({ state: 'error', message: result.message })
+        }
+    }
+
+    function closeModal() {
         setModalOpen(false)
+        setStatus({ state: 'idle' })
     }
 
     useEffect(() => {
@@ -115,6 +132,8 @@ export default function Sidebar() {
                     </Link>
                     <Link
                         href="https://github.com/dbo-keeganpatton"
+                        target="_blank"
+                        rel="noreferrer"
                         aria-label="Keegan Patton on GitHub"
                         className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border border-slate-600 text-slate-300 text-xs hover:border-slate-400 hover:text-white transition-colors duration-200"
                     >
@@ -123,6 +142,8 @@ export default function Sidebar() {
                     </Link>
                     <Link
                         href="https://www.linkedin.com/in/keeganpatton/"
+                        target="_blank"
+                        rel="noreferrer"
                         aria-label="Keegan Patton on LinkedIn"
                         className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border border-slate-600 text-slate-300 text-xs hover:border-slate-400 hover:text-white transition-colors duration-200"
                     >
@@ -133,10 +154,24 @@ export default function Sidebar() {
             </div>
 
             {/* ── Email modal ─────────────────────────────── */}
-            <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+            <Modal isOpen={modalOpen} onClose={closeModal}>
                 <h2 className="text-base font-semibold text-white mb-5">
                     Leave a message after the beep
                 </h2>
+
+                {status.state === 'sent' ? (
+                    <div className="space-y-4">
+                        <p className="text-emerald-400 text-sm" role="status">
+                            {status.message}
+                        </p>
+                        <button
+                            onClick={closeModal}
+                            className="w-full bg-emerald-950 border border-emerald-800 text-emerald-400 py-2.5 rounded text-sm hover:bg-emerald-900 hover:border-emerald-700 transition-colors duration-200"
+                        >
+                            Close
+                        </button>
+                    </div>
+                ) : (
                 <form className="space-y-3" onSubmit={handleSubmit(onSubmit)}>
                     <input
                         type="email"
@@ -156,13 +191,20 @@ export default function Sidebar() {
                         className="w-full bg-black/60 border border-white/10 text-white placeholder-slate-700 p-2.5 rounded text-sm focus:outline-none focus:border-emerald-700 transition-colors resize-none"
                         {...register('message', { required: true })}
                     />
+                    {status.state === 'error' && (
+                        <p className="text-red-400 text-xs" role="alert">
+                            {status.message}
+                        </p>
+                    )}
                     <button
                         type="submit"
-                        className="w-full bg-emerald-950 border border-emerald-800 text-emerald-400 py-2.5 rounded text-sm hover:bg-emerald-900 hover:border-emerald-700 transition-colors duration-200"
+                        disabled={status.state === 'sending'}
+                        className="w-full bg-emerald-950 border border-emerald-800 text-emerald-400 py-2.5 rounded text-sm hover:bg-emerald-900 hover:border-emerald-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                        Send message
+                        {status.state === 'sending' ? 'Sending…' : 'Send message'}
                     </button>
                 </form>
+                )}
             </Modal>
 
         </aside>

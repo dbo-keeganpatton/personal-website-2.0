@@ -34,6 +34,8 @@ export default function Project5Content() {
 
                 <a
                     href="https://github.com/dbo-keeganpatton/personal-website-2.0"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-center text-sm border border-emerald-800 text-emerald-400 rounded py-2.5 hover:bg-emerald-950 transition-colors duration-200"
                 >
                     Visit the Repository →

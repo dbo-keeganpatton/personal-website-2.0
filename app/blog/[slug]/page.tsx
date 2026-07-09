@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllPosts, getPost } from '@/utils/posts'
-import CursorGlow from '@/components/CursorGlow'
 
 export async function generateStaticParams() {
     return getAllPosts().map(p => ({ slug: p.slug }))
@@ -12,7 +11,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const posts = getAllPosts()
     const meta = posts.find(p => p.slug === slug)
     if (!meta) return {}
-    return { title: `${meta.title} | Keegan Patton` }
+    return {
+        title: meta.title,
+        description: meta.description || undefined,
+        alternates: { canonical: `/blog/${slug}` },
+        openGraph: {
+            title: meta.title,
+            description: meta.description || undefined,
+            url: `/blog/${slug}`,
+            type: 'article',
+            publishedTime: meta.date || undefined,
+        },
+    }
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
@@ -24,7 +34,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
     return (
         <>
-            <CursorGlow />
             <main id="main-content" className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
 
                 <Link

@@ -31,6 +31,8 @@ export default function Project2Content() {
 
                 <a
                     href="https://darkoura.streamlit.app/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-center text-sm border border-emerald-800 text-emerald-400 rounded py-2.5 hover:bg-emerald-950 transition-colors duration-200"
                 >
                     Visit the Site →

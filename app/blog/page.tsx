@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import { getAllPosts } from '@/utils/posts'
-import CursorGlow from '@/components/CursorGlow'
 
-export const metadata = { title: 'Blog | Keegan Patton' }
+export const metadata = {
+    title: 'Blog',
+    description: 'Occasional writing on things I build or find interesting.',
+    alternates: { canonical: '/blog' },
+}
 
 export default function BlogIndex() {
     const posts = getAllPosts()
 
     return (
         <>
-            <CursorGlow />
             <main id="main-content" className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
 
                 <div className="mb-12">

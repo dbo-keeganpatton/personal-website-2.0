@@ -6,11 +6,6 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
     const [visible, setVisible] = useState(false)
 
     useEffect(() => {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            setVisible(true)
-            return
-        }
-
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {

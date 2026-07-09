@@ -25,7 +25,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     return (
         <>
             <CursorGlow />
-            <div className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
+            <main id="main-content" className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
 
                 <Link
                     href="/blog"
@@ -63,7 +63,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     dangerouslySetInnerHTML={{ __html: post.contentHtml }}
                 />
 
-            </div>
+            </main>
         </>
     )
 }

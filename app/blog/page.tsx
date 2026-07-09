@@ -10,7 +10,7 @@ export default function BlogIndex() {
     return (
         <>
             <CursorGlow />
-            <div className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
+            <main id="main-content" className="max-w-2xl mx-auto px-6 py-16 lg:py-24">
 
                 <div className="mb-12">
                     <Link
@@ -65,7 +65,7 @@ export default function BlogIndex() {
                         ))}
                     </ul>
                 )}
-            </div>
+            </main>
         </>
     )
 }

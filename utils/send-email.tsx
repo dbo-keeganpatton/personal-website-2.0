@@ -1,4 +1,8 @@
-import { FormData } from '@/components/EmailButton';
+export type FormData = {
+    subject: string;
+    email: string;
+    message: string;
+};
 
 export function sendEmail(data: FormData) {
 

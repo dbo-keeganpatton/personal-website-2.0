@@ -6,20 +6,23 @@ tags: ["automotive"]
 ---
 
 ## What a Hunk of Junk
-The project car... a piece of auto memorabilia designed to maximize enjoyment, minimize your bank account, and provide just the right amount of pain to make it seem worth it in the end. I bought this Honda Accord late in the autumn of 2020. The world was in shambles, I had about 300 dollars to my name, and I was in love. Life was simple, but I needed a way to get around. For the preceding ten years I had made do commuting everywhere by bicycle after my previous car, a 2002 Toyota Corolla, blew. I was the victim of my own ignorance and inability to service my own vehicles. Check light came on, I took it to a shop, the bill was more than I could pay, and the rest was history. Thus began my rather monkish saga of preserving the planet by being a bum on a bike.
+I bought this Honda Accord in the fall of 2020. I had about $300 to my name, I was in love, and I needed a way to get around. For the previous ten years I'd been getting everywhere by bike, ever since my 2002 Corolla died on me. That one was my fault — check engine light came on, I took it to a shop, the bill was more than I could afford, and that was the end of the car. So began a decade of being a bum on a bicycle.
 
 ![honda accord picture](/blog/accord/car.jpg)
 
 ## Never Again
-After buying the Accord for a meager sum (a fortune to me at the time), I resolved to use this vehicle to learn how to repair and maintain my own cars. The friend who sold it to me provided a service list of items that likely needed to be addressed sooner rather than later, and after about a month of driving, I came to my first test of resolve... the alternator failed. In a moment of panic I decided that I actually wasn't cut out for this mechanic nonsense, and that I should call the professionals. Well, they wanted half of what I paid for the car, and the part was a quarter of that at AutoZone. The answer was clear: I needed to figure this out myself.
+The friend who sold me the Accord handed over a list of things that would probably need attention sooner rather than later. About a month in, the alternator went out. My first instinct was to call a shop. They wanted half of what I paid for the car. The part was a quarter of that at AutoZone. Message received — I needed to figure this out myself.
 
 ## Timing Is Everything
-So it came to be that over the next six years I learned by fixing things as they broke. First it was the alternator, then a broken axle, then a dead distributor, then the windshield wiper motor giving out on the side of a rural Missouri road during a flood. With each experience I grew more confident in my acumen for diagnosing and resolving mechanical issues. But there was always one boogeyman I shuddered to confront, one repair I knew I would someday have to face... the infamous timing belt job.
+Over the next six years I learned by fixing things as they broke. Alternator, then a busted axle, then a dead distributor, then the wiper motor giving out on a rural Missouri road in the middle of a flood. Each one made me a little less afraid of the next. But there was always one job hanging over my head — the one I knew I'd eventually have to do, and dreaded doing. The timing belt.
 
 ![engine-bay-top](/blog/accord/engine-bay-top.jpg)
 
 ## In Too Deep
-That day came last year, when I realized I was overdue for replacing the timing belt by about ten thousand miles. The faithful F22B1 could probably last much longer, but the consequences of a snapped belt would be catastrophic. It was time to finally tackle this. After years of learning the fifth-generation Accord platform, I knew that changing the timing belt was only a small component of a much larger engine restoration effort. Doing this would open the door to several critically needed maintenance items:
+Last year I finally admitted I was overdue by about ten thousand miles. The F22B1 could probably keep going for a while, but a snapped belt on an interference engine is game over. Time to stop putting it off.
+
+At this point I knew the fifth-gen Accord well enough to know that a timing belt job isn't really a timing belt job. It's the excuse to do everything else you should be doing while you're already in there:
+
 - Timing and balance shaft belts
 - Water pump
 - Valve cover gasket and spark plug tube seals
@@ -29,39 +32,43 @@ That day came last year, when I realized I was overdue for replacing the timing 
 - Camshaft seal
 - Timing and balance tensioners
 
-Each of these items was not just important, but nuanced as well. Many repairs you simply unbolt something, and replace it to spec. For most of this list, how they were uninstalled, and replaced not only required the tight claustrobphic precision expected when you spend time with 90's Hondas, they also relied on each other and worked together as a singular system designed to drive the engine forward.
-
+Most repairs are unbolt the thing, put the new thing in, torque to spec. This one wasn't. Half of the list lives in the kind of claustrophobic space '90s Hondas are famous for, and most of the parts depend on each other — you can't do one without doing all of them.
 
 ![lower-gear-pov](/blog/accord/lower-gears-pov.jpg)
 
 ## The Best Laid Plans
-So for a few weeks prior, I spent a sensible amount of time watching tutorials, reading the Haynes teardown manual, and carefully planning my approach and resources for completing this with as little headache as possible. I do not have a garage, so I also needed to consider the conditions and elements during this repair. A sudden rain while my engine valves are exposed would be catastrophic and likely unrecoverable. It also happens to be early July, where 100 degree days are common. So I did the best I could, and planned for what I could control, and prayed for what I couldnt. When the day finally came, I felt prepared, confident, and resolute.
+I spent a couple of weeks prepping. Haynes manual, teardown videos, parts staged, tools laid out. I don't have a garage, which was the other problem. A surprise rainstorm with the valves exposed would be unrecoverable. And it was early July, so 100-degree days were baked in. I planned for what I could plan for and hoped for the rest.
 
 ![parts](/blog/accord/parts.jpg)
 
 ## Ready Set Disaster
-So I set about early in the day disasembling the important things I needed, to get to this simple twenty dollar belt. 
-- Spark plugs, out.. 
-- Valve Cover, off.. 
-- Motor Mount, unmounted..
-- Harmonic Balancer, manhandled..
+The day of, I got started early.
 
-Things progressed smoothly and methodically for the most part. I made sure to be aware of the various markings indicating where the pulleys were when I removed various parts and belts, I placed every screw, bolt and nut into labeled bags. I wanted to make sure that I did this **right**.
+- Spark plugs, out.
+- Valve cover, off.
+- Motor mount, unbolted.
+- Harmonic balancer, wrestled off.
 
-I began to reinstall the belts, tensioners, seals and pulleys when it happened. For no good reason, ignoring all of my accumulated experience, I set to installing a critical piece of the puzzle, the **balance shaft tensioner bracket**, and instead of an inch-pounds torque wrench, I decided to use a foot-pounds wrench and convert the units. In an instant, I snapped the *extremely specific* bracket bolt off it it's hole..
+It went smoothly. I marked every pulley position, bagged and labeled every bolt. I wanted to do this **right**.
+
+Then, halfway through reinstalling everything, I got to the **balance shaft tensioner bracket**. And for no good reason — ignoring everything I'd learned — I grabbed a foot-pounds torque wrench instead of the inch-pounds one and figured I'd just do the conversion in my head. Snap. The bolt sheared off in the hole.
 
 ![disaster](/blog/accord/broken.jpg)
 
 ## F$#@
-Well this was a new one.. I had severed an extremely important part, and stranded half of it deep instide of a ten millimeter hole directly facing solid steel an inch and a half awaway. Unfortunately for me, this was not just a random screw I could source from the local hardware store. This part was *specific*, it *had to be sourced from honda directly*. However before I could worry about that, I needed to get the remnants of the bolt out of that hole. I admitedly had to idea how to do this. I decided that I needed time to asses, and figure out how to resolve this without doing more damage in the process. It became clear, that this was not going to happen today. I had been in the sun for over 8 hours, and was exhaused, and worse yet, a storm was coming in...
+Well. That was a new one.
+
+The broken half was buried at the bottom of a 10mm hole, with a wall of solid steel an inch and a half behind it. And it wasn't a fastener I could grab from the local hardware store — it's a specific Honda part, sourced from Honda.
+
+Before I could worry about the replacement, I had to get the stub out of the hole. I had no idea how. What I did know was that I'd been in the sun for eight hours, I was cooked, and a storm was rolling in.
 
 ![rain](/blog/accord/rain.jpg)
 
-In a rush, I reassembled everything I could to ensure that the car could sit through the rain without damage..
--  Motor Mount.. Remounted
--  Power Steering Pump.. Connected
--  Timing Covers... Reinstalled.. Painfully
--  Valve Covers.. Covered
+I threw everything back together as fast as I could, just to keep the engine dry.
 
-I had no tarp, so I resolved that trashbags and duct tape would have to do. So with a hope and a prayer, I left my work in disarray, and resolved to figure out this new unexpected repair.
+- Motor mount, remounted.
+- Power steering pump, connected.
+- Timing covers, back on (painfully).
+- Valve cover, covered.
 
+I didn't have a tarp, so trash bags and duct tape had to do. I left it in the driveway and went inside to figure out what came next.

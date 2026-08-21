@@ -6,7 +6,7 @@ tags: ["automotive"]
 ---
 
 ## What a Hunk of Junk
-I bought this Honda Accord in the fall of 2020. I had about $300 to my name, I was in love, and I needed a way to get around. For the previous ten years I'd been getting everywhere by bike, ever since my 2002 Corolla died on me. That one was my fault — check engine light came on, I took it to a shop, the bill was more than I could afford, and that was the end of the car. So began a decade of being a bum on a bicycle.
+I bought this Honda Accord in the fall of 2020. I had about $300 to my name, I was in love, and I needed a way to get around. For the previous ten years I'd been getting everywhere by bike, ever since my 2002 Corolla died on me. That one was my fault — check engine light came on, I took it to a shop, the bill was more than I could afford, and that was the end of the car. So began a decade of being a bum on a bike.
 
 ![honda accord picture](/blog/accord/car.jpg)
 
@@ -72,3 +72,10 @@ I threw everything back together as fast as I could, just to keep the engine dry
 - Valve cover, covered.
 
 I didn't have a tarp, so trash bags and duct tape had to do. I left it in the driveway and went inside to figure out what came next.
+
+
+## Nutty Putty 
+After a night of rest, and a trip to the Honda parts department to source the balancer belt adjuster bolt (part 90018-PT0-010), that I destroyed, I was ready to start the task of extracting the severed fastener stuck in the engine. I tried several extraction methods, with each one being quite literally blocked by the presence of the side frame of the car a mere few inches away. Even specially created angle drill attachments made for tight spaces were to bulky. At times it felt like I was stuck inside a cave, trying to ease myself out inch by inch.
+The method that ultimately ended up working, was to use a drill bit, place it on the broken fastener edge, and lightly tap it with an extra small hammer. One quarter rotation, then another, then another.. on and on for about 3 hours. Then.. at long last the fastener was out, and one challenge had been ended.
+
+![rain](/blog/accord/bolt.jpg)
